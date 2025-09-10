@@ -1,0 +1,890 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "pro-normal";
+  font-weight: 400;
+}
+
+.container-class {
+  max-width: 1440px;
+  margin: auto;
+}
+.workprocess {
+  background-image: url("/images/work-process.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hiddenScrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: "pro-normal";
+  src: url(./fonts/SFProDisplay-Regular.woff);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "pro-medium";
+  src: url(./fonts/SFProDisplay-Medium.woff);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "pro-semibold";
+  src: url(./fonts/FontsFree-Net-SFProDisplay-Semibold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "pro-bold";
+  src: url(./fonts/SFProDisplay-Bold.woff);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "pro-black";
+  src: url(./fonts/SFProDisplay-Bold.woff);
+  font-weight: 800;
+}
+/* new-fonts */
+
+@font-face {
+  font-family: "clash-normal";
+  src: url(./fonts/ClashDisplay-Regular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "clash-medium";
+  src: url(./fonts/ClashDisplay-Medium.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "clash-semibold";
+  src: url(./fonts/ClashDisplay-Semibold.otf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "clash-bold";
+  src: url(./fonts/ClashDisplay-Bold.otf);
+  font-weight: 700;
+}
+.clash-normal {
+  font-family: "clash-normal";
+  font-weight: 400;
+}
+.clash-medium {
+  font-family: "clash-medium";
+  font-weight: 500;
+}
+.clash-semibold {
+  font-family: "clash-semibold";
+  font-weight: 700;
+}
+
+.pro-normal {
+  font-family: "pro-normal";
+  font-weight: 400;
+}
+
+.pro-medium {
+  font-family: "pro-medium";
+  font-weight: 500;
+}
+
+.pro-semibold {
+  font-family: "pro-semibold";
+  font-weight: 500;
+}
+
+.pro-bold {
+  font-family: "pro-bold";
+  font-weight: 700;
+}
+
+.pro-black {
+  font-family: "pro-black";
+  font-weight: 800;
+}
+
+.font-100 {
+  font-size: 100px;
+}
+.font-98 {
+  font-size: 98px;
+}
+.font-96 {
+  font-size: 96px;
+}
+.font-92 {
+  font-size: 92px;
+}
+.font-90 {
+  font-size: 90px;
+}
+.font-88 {
+  font-size: 88px;
+}
+.font-86 {
+  font-size: 86px;
+}
+.font-84 {
+  font-size: 84px;
+}
+.font-82 {
+  font-size: 82px;
+}
+.font-80 {
+  font-size: 805px;
+}
+.font-78 {
+  font-size: 78px;
+}
+.font-76 {
+  font-size: 76px;
+}
+.font-74 {
+  font-size: 74px;
+}
+.font-72 {
+  font-size: 72px;
+}
+.font-70 {
+  font-size: 70px;
+}
+.font-68 {
+  font-size: 68px;
+}
+.font-66 {
+  font-size: 66px;
+}
+.font-64 {
+  font-size: 64px;
+}
+.font-62 {
+  font-size: 62px;
+}
+.font-60 {
+  font-size: 60px;
+}
+.font-58 {
+  font-size: 58px;
+}
+.font-56 {
+  font-size: 56px;
+}
+.font-54 {
+  font-size: 54px;
+}
+.font-52 {
+  font-size: 52px;
+}
+.font-50 {
+  font-size: 50px;
+}
+.font-48 {
+  font-size: 48px;
+}
+.font-46 {
+  font-size: 46px;
+}
+.font-44 {
+  font-size: 44px;
+}
+.font-42 {
+  font-size: 42px;
+}
+.font-40 {
+  font-size: 40px;
+}
+.font-38 {
+  font-size: 38px;
+}
+.font-36 {
+  font-size: 36px;
+}
+.font-34 {
+  font-size: 34px;
+}
+.font-32 {
+  font-size: 32px;
+}
+.font-30 {
+  font-size: 30px;
+}
+.font-28 {
+  font-size: 28px;
+}
+.font-26 {
+  font-size: 26px;
+}
+.font-24 {
+  font-size: 24px;
+}
+.font-22 {
+  font-size: 22px;
+}
+.font-20 {
+  font-size: 20px;
+}
+.font-18 {
+  font-size: 18px;
+}
+.font-16 {
+  font-size: 16px;
+}
+.font-15 {
+  font-size: 15px;
+}
+.font-14 {
+  font-size: 14px;
+}
+.font-13 {
+  font-size: 13px;
+}
+.font-12 {
+  font-size: 12px;
+}
+.font-11 {
+  font-size: 11px;
+}
+.font-10 {
+  font-size: 10px;
+}
+.font-9 {
+  font-size: 9px;
+}
+.font-8 {
+  font-size: 8px;
+}
+
+@media (max-width: 768px) {
+  .font-68 {
+    font-size: 60px;
+  }
+  .font-48 {
+    font-size: 36px;
+  }
+  .font-40 {
+    font-size: 36px;
+  }
+  .font-64 {
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 550px) {
+  .font-68 {
+    font-size: 40px;
+  }
+  .font-24 {
+    font-size: 20px;
+  }
+  .font-48 {
+    font-size: 33px;
+  }
+  .font-20 {
+    font-size: 16px;
+  }
+  .font-12 {
+    font-size: 10px;
+  }
+  .font-32 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .font-48 {
+    font-size: 30px;
+  }
+}
+
+/* btns */
+
+.primary-btn {
+  display: flex;
+  height: 48px;
+  padding: 0px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 12px 0px transparent;
+  transition: all 0.1s ease-in-out;
+  background: linear-gradient(0deg, #3e03b3 -55.61%, #5715da 100%);
+}
+
+.primary-btn:hover {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(180deg, #5715da -21.3%, #3e03b3 121.3%);
+  box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.4);
+}
+.primary-white-btn {
+  display: flex;
+  height: 48px;
+  padding: 0px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  border: transparent;
+  transition: all 0.1s ease-in-out;
+  background: linear-gradient(0deg, #3e03b3 -55.61%, #5715da 100%);
+}
+.primary-white-btn:hover {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: white;
+  color: black;
+  box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.4);
+}
+.business-tag {
+  color: #a1f919;
+  font-family: "pro-medium";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 166.667% */
+  display: flex;
+  padding: 2px 10px;
+  align-items: flex-start;
+  border-radius: 100px;
+  border: 1px solid #a1f919;
+}
+
+/* inputs */
+
+.form-input {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-family: "pro-normal";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  outline: none;
+}
+
+.global-input {
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  display: flex;
+  padding: 14px 16px;
+  background: transparent;
+  outline: none;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  font-family: "pro-normal";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+}
+
+.global-input::placeholder {
+  color: #ffffff66;
+}
+.cards {
+  position: relative;
+  border-radius: 14px;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* Gradient Border */
+.cards::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  padding: 1px;
+  background: conic-gradient(
+    from var(--aa),
+    /* top line */ #5b478f 0% var(--lineY),
+    transparent var(--lineY) 50%,
+    /* bottom line */ #567c24 50% calc(50% + var(--lineY)),
+    transparent calc(50% + var(--lineY)) 100%
+  );
+  animation: rotateShrinkY 6s linear infinite;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  border-radius: inherit;
+}
+
+/* Variables */
+@property --aa {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@property --lineX {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 25%;
+}
+
+@property --lineY {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 25%;
+}
+
+@keyframes rotateShrinkY {
+  0% {
+    --aa: 0deg;
+    --lineX: 15%;
+    --lineY: 8%; /* shrink Y */
+  }
+  25% {
+    --aa: 90deg;
+    --lineX: 15%;
+    --lineY: 8%;
+  }
+  50% {
+    --aa: 180deg;
+    --lineX: 25%;
+    --lineY: 25%;
+  }
+  75% {
+    --aa: 270deg;
+    --lineX: 15%;
+    --lineY: 8%;
+  }
+  100% {
+    --aa: 360deg;
+    --lineX: 15%;
+    --lineY: 8%;
+  }
+}
+
+/* 
+@layer utilities {
+  .border-line-animation::before,
+  .border-line-animation::after,
+  .border-line-animation div::before,
+  .border-line-animation div::after {
+    content: "";
+    position: absolute;
+    background: transparent;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .border-line-animation::before {
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 1px;
+    background: linear-gradient(90deg, #3e03b3, transparent);
+    animation: slideTop 2s linear infinite;
+  }
+
+  .border-line-animation::after {
+    bottom: 0;
+    right: 0;
+    width: 600px;
+    height: 1px;
+    background: linear-gradient(270deg, #a1f919, transparent);
+    animation: slideBottom 2s linear infinite;
+  }
+
+  .border-line-animation div::before {
+    top: 0;
+    left: 0;
+    width: px;
+    height: 300px;
+    background: linear-gradient(180deg, #3e03b3, transparent);
+    animation: slideLeft 2s linear infinite;
+  }
+
+  .border-line-animation div::after {
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    height: 300px;
+    background: linear-gradient(0deg, #a1f919, transparent);
+    animation: slideRight 2s linear infinite;
+  }
+
+  @keyframes slideTop {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  @keyframes slideBottom {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes slideLeft {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+
+  @keyframes slideRight {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+} */
+
+/* This is YOUR CSS, slightly modified to work with the gradient */
+/* Your CSS file */
+/* 
+.border-line-effect {
+  position: relative;
+}
+
+.animated-svg-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.animated-svg-border .line {
+  stroke-dasharray: 760;
+  stroke-width: 3px;
+  fill: transparent;
+  animation: svgAnimation 4s linear infinite;
+}
+
+@keyframes svgAnimation {
+  from {
+    stroke-dashoffset: 1520;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+} */
+.ellipse-container {
+  position: relative;
+  width: 517px;
+  height: 519px;
+  overflow: hidden;
+}
+
+.ellipse {
+  position: absolute;
+  width: 517px;
+  height: 519px;
+  border-radius: 50%;
+  animation: rotateEllipse 4s infinite ease-in-out;
+}
+
+.ellipse.blue {
+  background-color: #3e03b3;
+  opacity: 0.2;
+  animation-delay: 0s;
+}
+
+.ellipse.green {
+  background-color: #a1f919;
+  opacity: 0.2;
+  animation-delay: 2s;
+}
+
+@keyframes rotateEllipse {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(180deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+.blog-para {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "pro-normal";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+}
+
+.blog-heading {
+  color: #fff;
+  font-family: "pro-semibold";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 125% */
+  letter-spacing: -1px;
+}
+
+.blog-subheading {
+  color: #fff;
+  font-family: "pro-medium";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 133.333% */
+}
+
+.blog-miniheading {
+  color: rgba(255, 255, 255, 0.92);
+  font-family: "pro-semibold";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 133.333% */
+}
+.image-wrapper-for-animation,
+.sub-image-wrapper-for-animation {
+  transform: translateY(0px) rotate(0deg);
+  animation: none;
+}
+
+@keyframes popUpAndReturn {
+  0% {
+    transform: translateY(40px);
+  }
+  50% {
+    transform: translateY(-500px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes popUpAndReturnAndRotate {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  10% {
+    transform: translateY(-300px) rotate(0deg);
+  }
+  11% {
+    transform: translateY(-300px) rotate(-38.389deg);
+  }
+  20% {
+    transform: translateY(0px) rotate(-38.389deg);
+  }
+  80% {
+    transform: translateY(0px) rotate(-38.389deg);
+  }
+  81% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.parent-container-for-hover:hover .image-wrapper-for-animation {
+  animation: popUpAndReturn 0.3s linear forwards;
+}
+
+.parent-container-for-hover:hover .sub-image-wrapper-for-animation {
+  animation: popUpAndReturnAndRotate 1s linear forwards;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* footer */
+
+/* Autofill background ko dark karne ke liye */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px #14171c inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Input field mein text select karne par color change karne ke liye */
+::selection {
+  background: #3e03b3;
+  color: white;
+}
+
+/* Chrome aur Safari ke liye */
+::-webkit-selection {
+  background: #3e03b3;
+  color: white;
+}
+
+/* Icon ka color change karne ke liye */
+.filter-black {
+  filter: brightness(0) saturate(100%);
+}
+
+/* fghj */
+.card-hover-effect {
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card-hover-effect::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at bottom right,
+    rgba(100, 255, 100, 0.2) 0%,
+    /* Adjust the green color here */ transparent 50%
+  );
+  opacity: 0;
+  transform: scale(0.5);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  pointer-events: none;
+  border-radius: 12px;
+}
+
+.card-hover-effect:hover::before {
+  opacity: 1;
+  transform: scale(1.5);
+}
+
+.technology-icon:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.44) inset,
+    0 0 8px 0 rgba(0, 0, 0, 0.32) inset, 0 0 20px 0 rgba(161, 249, 25, 0.32);
+}
+
+/* Container for the text spans */
+.text-wrapper {
+  /* Set a fixed height that matches your text size */
+  height: 24px; /* Adjust this to match your font-size and line-height */
+  overflow: hidden; /* Hides the text outside this container */
+  position: relative; /* Essential for positioning the spans */
+}
+
+/* Base style for both text spans */
+.text-main,
+.text-hover {
+  display: block; /* Allows transform to work properly */
+  transition: transform 0.3s ease;
+}
+
+/* Default state of the main text */
+.text-main {
+  transform: translateY(0);
+}
+
+.text-hover {
+  transform: translateY(100%);
+}
+.technology-icon:hover .text-main {
+  transform: translateY(-100%);
+}
+
+.technology-icon:hover .text-hover {
+  transform: translateY(-100%);
+}
+/* Container for both images */
+.image-container {
+  position: relative;
+  width: 30px; /* Aapki image ki width */
+  height: 30px; /* Aapki image ki height */
+}
+
+/* Default image: visible by default */
+.default-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover image: hidden by default */
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* On hover, hide the default image and show the hover image */
+.technology-icon:hover .default-image {
+  opacity: 0;
+}
+
+.technology-icon:hover .hover-image {
+  opacity: 1;
+}
+.heightlight-heading {
+  font-size: 24px;
+  line-height: 32px;
+  padding: 20px;
+  font-family: "pro-medium";
+}
+.article-title {
+  font-size: 18px;
+  line-height: 18px;
+  font-family: "pro-normal";
+  color: #fff;
+}
+.article-date {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "pro-medium";
+  color: #ffffff99;
+}
+.article-description {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "pro-medium";
+  color: #fff;
+}
+@media (max-width: 550px) {
+  .article-description {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

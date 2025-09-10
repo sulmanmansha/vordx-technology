@@ -1,0 +1,65 @@
+.card-hover-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-hover-effect::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  top: 120px;
+  left: 300px;
+  width: 390px;
+  height: 390px;
+  background: rgba(161, 249, 25, 0.12);
+  filter: blur(110px);
+  border-radius: 390px;
+  opacity: 0;
+  transform: scale(0.1);
+  transform-origin: bottom right;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  pointer-events: none;
+}
+.card-hover-effect:hover {
+  border: 1px solid rgba(161, 249, 25, 0.08);
+}
+
+.card-hover-effect:hover::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* sub-card-hover-effect */
+.sub-card-hover-effect {
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.sub-card-hover-effect::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  top: 170px;
+  left: 200px;
+  width: 390px;
+  height: 390px;
+  background: rgba(161, 249, 25, 0.12);
+  filter: blur(110px);
+  border-radius: 390px;
+  opacity: 0;
+  transform: scale(0.1);
+  transform-origin: bottom right;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.sub-card-hover-effect:hover::before {
+  opacity: 1;
+  transform: scale(1);
+}
+.sub-card-hover-effect:hover {
+  border: 1px solid rgba(161, 249, 25, 0.08);
+}
