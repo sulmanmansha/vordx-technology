@@ -7,13 +7,17 @@ export async function generateStaticParams() {
     const response = await getBlog();
     const blogs = response?.data || [];
 
-    // Use slug instead of id
+    // fallback to prevent build errors
+    if (blogs.length === 0) {
+      return [{ detail: "sample-blog-slug" }];
+    }
+
     return blogs.map((blog) => ({
-      detail: String(blog.slug), 
+      detail: String(blog.slug),
     }));
   } catch (error) {
     console.error("Failed to generate static params:", error);
-    return [];
+    return [{ detail: "sample-blog-slug" }]; // fallback
   }
 }
 
@@ -24,5 +28,4 @@ const Page = ({ params }) => {
     </div>
   );
 };
-
 export default Page;
