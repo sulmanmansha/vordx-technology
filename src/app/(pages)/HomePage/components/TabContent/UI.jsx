@@ -18,14 +18,17 @@ const UI = () => {
         <div className="absolute inset-0 bg-black/40 translate-y-full group-hover:translate-y-0 transition-all duration-700"></div>
 
         {/* Content */}
-        <div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-8 text-white translate-y-full group-hover:translate-y-0 transition-all duration-700">
+        <div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-700 group-hover:delay-500">
           <h3 className=" md:text-[36px] text-[26px] leading-9 md:leading-[44px] text-start pro-medium">
             A modern, trustworthy, and high performance platform for Copy
             Trading.
           </h3>
 
           <div className="flex items-center justify-between text-sm flex-wrap">
-            <a href="#" className="flex pro-normal items-center gap-2 text-[14px]">
+            <a
+              href="#"
+              className="flex pro-normal items-center gap-2 text-[14px]"
+            >
               View Case Study <span className="pt-1 text-[21px]">→</span>
             </a>
             <span className="text-[14px] pro-normal text-[#FFFFFFCC] leading-5">
@@ -47,7 +50,7 @@ const UI = () => {
         <div className="absolute inset-0 bg-black/40 translate-y-full group-hover:translate-y-0 transition-all duration-700"></div>
 
         {/* Content */}
-        <div className="absolute inset-0 flex flex-col justify-between pt-4 pr-[18px] pb-6 pl-4    sm:pt-6 sm:pr-[22px] sm:pb-9 sm:pl-6 text-white translate-y-full group-hover:translate-y-0 transition-all duration-700">
+        <div className="absolute inset-0 flex flex-col justify-between pt-4 pr-[18px] pb-6 pl-4 sm:pt-6 sm:pr-[22px] sm:pb-9 sm:pl-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-700 group-hover:delay-500">
           <h3 className="md:text-[36px] text-[26px] leading-9 md:leading-[44px]  text-start pro-medium">
             A modern, trustworthy, <br /> and high performance platform for Copy
             <br />
@@ -55,7 +58,10 @@ const UI = () => {
           </h3>
 
           <div className="flex items-center justify-between text-sm flex-wrap">
-            <a href="#" className="flex pro-normal items-center gap-2 text-[14px]">
+            <a
+              href="#"
+              className="flex pro-normal items-center gap-2 text-[14px]"
+            >
               View Case Study <span className="pt-1 text-[21px]">→</span>
             </a>
             <span className="text-[14px] pro-normal text-[#FFFFFFCC] leading-5">
@@ -77,14 +83,17 @@ const UI = () => {
         <div className="absolute inset-0 bg-black/40 translate-y-full group-hover:translate-y-0 transition-all duration-700"></div>
 
         {/* Content */}
-        <div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-8 text-white translate-y-full group-hover:translate-y-0 transition-all duration-700">
+        <div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-700 group-hover:delay-500">
           <h3 className="md:text-[36px] text-[26px] leading-9 md:leading-[44px]  w-auto lg:w-[620px] text-start pro-medium">
             A modern, trustworthy, and high performance platform for Copy
             Trading.
           </h3>
 
           <div className="flex items-center justify-between text-sm flex-wrap">
-            <a href="#" className="flex pro-normal items-center gap-2 text-[14px]">
+            <a
+              href="#"
+              className="flex pro-normal items-center gap-2 text-[14px]"
+            >
               View Case Study <span className="pt-1 text-[21px]">→</span>
             </a>
             <span className="text-[14px] pro-normal text-[#FFFFFFCC] leading-5">
@@ -108,14 +117,17 @@ const UI = () => {
           <div className="absolute inset-0 bg-black/40 translate-y-full group-hover:translate-y-0 transition-all duration-700"></div>
 
           {/* Content */}
-          <div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-8 text-white translate-y-full group-hover:translate-y-0 transition-all duration-700">
+          <div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-700 group-hover:delay-500">
             <h3 className="md:text-[36px] text-[26px] leading-9 md:leading-[44px]  w-auto lg:w-[523px] text-start pro-medium">
               A modern, trustworthy, and high performance platform for Copy
               Trading.
             </h3>
 
             <div className="flex items-center justify-between text-sm flex-wrap">
-              <a href="#" className="flex items-center pro-normal gap-2 text-[14px]">
+              <a
+                href="#"
+                className="flex items-center pro-normal gap-2 text-[14px]"
+              >
                 View Case Study <span className="pt-1 text-[21px]">→</span>
               </a>
               <span className="text-[14px] pro-normal text-[#FFFFFFCC] leading-5">
@@ -137,14 +149,17 @@ const UI = () => {
           <div className="absolute inset-0 bg-black/40 translate-y-full group-hover:translate-y-0 transition-all duration-700"></div>
 
           {/* Content */}
-          <div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-8 text-white translate-y-full group-hover:translate-y-0 transition-all duration-700">
+          <div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-700 group-hover:delay-500">
             <h3 className="md:text-[36px] text-[26px] leading-9 md:leading-[44px] w-auto lg:w-[523px] text-start pro-medium">
               A modern, trustworthy, and high performance platform for Copy
               Trading.
             </h3>
 
             <div className="flex items-center justify-between text-sm flex-wrap">
-              <a href="#" className="flex pro-normal items-center gap-2 text-[14px]">
+              <a
+                href="#"
+                className="flex pro-normal items-center gap-2 text-[14px]"
+              >
                 View Case Study <span className="pt-1 text-[21px]">→</span>
               </a>
               <span className="text-[14px] pro-normal text-[#FFFFFFCC] leading-5">

@@ -20,7 +20,7 @@ const Technology = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-5 md:gap-y-[64px] pt-10 md:pt-[52px] justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-5 pt-10 md:pt-[52px] justify-center">
         {/* Card 1: Back-End Development */}
         <div className="relative h-[596px] w-full py-10 px-[34px] rounded-xl text-left overflow-hidden group">
           {/* Background image container */}

@@ -48,8 +48,6 @@ const ProductJourney = () => {
   const sectionRefs = useRef([]);
 
   useEffect(() => {
-    setActiveSection(1);
-
     const handleScroll = () => {
       if (!containerRef.current) return;
 
@@ -85,7 +83,6 @@ const ProductJourney = () => {
     };
   }, []);
 
-  // Determine which section to display based on hover or scroll
   const currentSection = hoveredId || activeSection;
 
   return (
@@ -95,7 +92,7 @@ const ProductJourney = () => {
       </p>
       <p className="text-[18px] pro-normal leading-6 text-[#FFFFFF99] pt-4 text-center pb-[32px]">
         Explore our success stories & discover how we’ve helped businesses like
-        yours overcome challenges
+        yours overcome <br /> challenges
       </p>
       <section className="px-[10px] md:px-[121px] pt-8 md:pt-[40px] grid md:grid-cols-2 gap-10 container-class workprocess">
         {/* Left Side - Active Section Display */}
@@ -146,7 +143,7 @@ const ProductJourney = () => {
                 {/* Dynamic green line on hover/active */}
                 <div
                   className={`absolute left-[8px] top-0 w-[2px] transition-all duration-500 ease-in-out md:left-[36px] ${
-                    hoveredId === section.id || currentSection === section.id
+                    hoveredId === section.id
                       ? "h-full bg-lime-400"
                       : "h-0 bg-lime-400"
                   }`}
@@ -163,23 +160,26 @@ const ProductJourney = () => {
 
                 {/* Timeline Content */}
                 <div>
-                <span
-                  className={`text-[#A1F919] bg-opacity-10 text-[16px] rounded-full leading-5 block mb-4 p-[6px] w-[32px] ${
-                    currentSection === section.id ? "bg-[#A1F919]" : ""
-                  }`}
-                  style={{
-                    color: "var(--Accent-Color, #A1F919)",
-                    textShadow: "0 0 20px #A1F919",
-                  }}
-                >
-                  {String(section.id).padStart(2, "0")}
-                </span>
-                <h3 className="text-[#F8F8F8] text-xl md:text-[28px] md:leading-8 mb-3 md:mb-5 pro-semibold">
-                  {section.title}
-                </h3>
-                <p className="text-[#F8F8F8] opacity-80 text-[16px] md:text-[18px] leading-6 mb-10">
-                  {section.description}
-                </p></div>
+                  <span
+                    className={`text-[#A1F919] bg-opacity-10 text-[16px] rounded-full leading-5 block mb-4 p-[6px] w-[32px] ${
+                      currentSection === section.id
+                        ? "bg-[#A1F919]"
+                        : "bg-transparent"
+                    }`}
+                    style={{
+                      color: "var(--Accent-Color, #A1F919)",
+                      textShadow: "0 0 20px #A1F919",
+                    }}
+                  >
+                    {String(section.id).padStart(2, "0")}
+                  </span>
+                  <h3 className="text-[#F8F8F8] text-xl md:text-[28px] md:leading-8 mb-3 md:mb-5 pro-semibold">
+                    {section.title}
+                  </h3>
+                  <p className="text-[#F8F8F8] opacity-80 text-[16px] md:text-[18px] leading-6 mb-10">
+                    {section.description}
+                  </p>
+                </div>
               </li>
             ))}
           </ul>

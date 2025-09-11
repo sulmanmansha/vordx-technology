@@ -7,7 +7,7 @@ import React, { useState, useRef, useEffect } from "react";
 
 const Faq = () => {
   // Set the first FAQ to be open by default
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleAnswer = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -106,17 +106,20 @@ const Faq = () => {
                       <h3 className="text-[#FFFFFFCC] text-[18px] sm:text-[24px] pro-normal leading-6 sm:leading-[32px]">
                         {item.question}
                       </h3>
-                      <span className="text-white text-xl">
+                      <span
+                        className={`${
+                          isActive ? "bg-[#707173] rounded-full" : ""
+                        }`}
+                      >
                         <Image
-                          src="/images/plusfaq.svg"
-                          width={32}
-                          height={32}
-                          alt="faq icon"
-                          className={`transition-transform duration-600 transform ${
+                          src={
                             isActive
-                              ? "rotate-180"
-                              : "rotate-0 transform-origin-bottom-right"
-                          }`}
+                              ? "/images/minus-sign.png"
+                              : "/images/plusfaq.svg"
+                          }
+                          width={isActive ? 28 : 32}
+                          height={isActive ? 28 : 32}
+                          alt="faq icon"
                         />
                       </span>
                     </div>

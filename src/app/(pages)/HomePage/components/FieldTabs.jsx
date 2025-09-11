@@ -91,7 +91,7 @@ export default function FieldTabs() {
   };
 
   return (
-    <div className="py-6 md:py-10 px-2.5 sm:px-10 lg:px-[44px] flex flex-col justify-center items-center text-center container-class">
+    <div className="py-6 md:py-20 px-2.5 sm:px-10 lg:px-[44px] flex flex-col justify-center items-center text-center container-class">
       <div>
         <h1 className="text-[32px] sm:text-[40px] md:text-[48px] pro-medium leading-10 sm:leading-[50px] md:leading-[60px] max-w-[763px] w-full">
           Building digital experiences that inspire and deliver results
