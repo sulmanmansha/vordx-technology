@@ -1,12 +1,12 @@
-import React from 'react'
-import Blogs from './Blogs'
+// import React from 'react'
+// import Blogs from './Blogs'
 
-const page = () => {
-  return (
-    <div>
-        <Blogs />
-    </div>
-  )
-}
+// const page = () => {
+//   return (
+//     <div>
+//         <Blogs />
+//     </div>
+//   )
+// }
 
-export default page
+// export default page
