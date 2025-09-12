@@ -883,37 +883,6 @@ input:-webkit-autofill:active {
   color: #fff;
 }
 
-
-/* 
-.content-box {
-  opacity: 0;
-  transform: translateY(0);
-  transition: opacity 0.5s ease, transform 0.7s ease;
-  transition-delay: 0s; 
-}
-
-.group:hover .content-box {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 1s; 
-}
-
-.group:not(:hover) .content-box {
-  animation: slideDownOut 0.7s forwards;
-  transition-delay: s; 
-}
-
-@keyframes slideDownOut {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  to {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-} */
-
 @media (max-width: 550px) {
   .article-description {
     font-size: 20px;
