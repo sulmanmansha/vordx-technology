@@ -68,7 +68,7 @@ const WhyWork = () => {
             </div>
 
             {/* Hover Blurs */}
-            <div className="absolute z-0 -top-10 -left-40 w-[275px] h-[277px] bg-[#A1F9191F] rounded-full blur-[120px] opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500 ease-in-out"></div>
+            <div className="absolute z-0 -top-10 -left-40 w-[275px] h-[278px] bg-[#A1F9191F] rounded-full blur-[120px] opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500 ease-in-out"></div>
             <div className="absolute z-0 -bottom-10 -right-40 w-[275px] h-[277px] bg-[#A1F9191F] rounded-full blur-[120px] opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500 ease-in-out"></div>
 
             <h1 className="text-[24px] pro-medium leading-7 max-w-[348px] w-full">
