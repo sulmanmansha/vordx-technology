@@ -1,24 +1,10 @@
 import React from "react";
 import Detail from "./Detail";
-import { getServices } from "../../../api/service/getServices";
 
-export async function generateStaticParams() {
-  try {
-    const res = await getServices();
-    const services = res?.data || [];
+export const dynamic = "force-dynamic"; 
 
-    return services.map((service) => ({
-      detail: String(service.slug),
-    }));
-  } catch (error) {
-    console.error("Failed to generate static params:", error);
-    return [];
-  }
-}
-
-// ⬇️ make this async to await params
-const Page = async ({ params }) => {
-  const { detail } = await params; // ✅ fix: await params
+const Page = ({ params }) => {
+  const { detail } = params; 
 
   return (
     <div>

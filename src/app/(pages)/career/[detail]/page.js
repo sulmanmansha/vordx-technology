@@ -1,20 +1,7 @@
 import React from "react";
 import Detail from "./Detail";
-import { getJobs } from "@/app/api/career/getJobs";
 
-export async function generateStaticParams() {
-  try {
-    const res = await getJobs();
-    const jobs = res?.data || [];
-
-    return jobs.map((job) => ({
-      detail: String(job.slug),
-    }));
-  } catch (error) {
-    console.error("Error generating static params:", error);
-    return [];
-  }
-}
+export const dynamic = "force-dynamic"; // ✅ force dynamic rendering
 
 const Page = ({ params }) => {
   return (
@@ -28,7 +15,7 @@ const Page = ({ params }) => {
       </div>
 
       {/* Detail component */}
-      <Detail  />
+      <Detail slug={params.detail} />
 
       {/* Left animation */}
       <div className="absolute -left-72 top-[55%] animate-ellipse">

@@ -2,13 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: false,
-  // eslint: {
-  //   ignoreDuringBuilds: true,
-  // },
-  images: {
-    domains: ['127.0.0.1'], 
-  },
+  // Remove output: 'export' if present
+  // This ensures dynamic routes work
 };
 
 export default nextConfig;
-  
