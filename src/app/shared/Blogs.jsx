@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const articles = [
   {
-    image: "/images/article1.svg",
+    // image: "/images/article1.svg",
     category: "Culture",
     date: "1 Aug, 2025",
     title: "Running design sprints to align your team and meet deadlines",
@@ -13,7 +13,7 @@ const articles = [
   },
   {
     image: "/images/article2.svg",
-    category: "Software Development",
+    // category: "Software Development",
     date: "31 Jul, 2025",
     title: "Inside our rebranding process and what we learned from it",
     width: 329,
