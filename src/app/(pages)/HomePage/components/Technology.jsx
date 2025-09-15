@@ -62,7 +62,7 @@ const Technology = () => {
           {/* Content */}
           <div className="relative z-20">
             <p className="sm:text-[36px] text-[28px] leading-8 sm:leading-10 pro-bold">
-              Back - end Development
+              Back - End Development
             </p>
           </div>
           {/* Overlay */}

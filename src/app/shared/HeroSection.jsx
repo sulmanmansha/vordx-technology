@@ -70,6 +70,7 @@ const HeroSection = ({
             <Button href={navigationLink || "#"} text={buttonText} />
           </div>
         )}
+        
       </div>
     </div>
   );

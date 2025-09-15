@@ -2,7 +2,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
-
+console.log(`env url ${BASE_URL}`);
 export const ApplyNow = async (userData) => {
   try {
     const axiosconfig = {

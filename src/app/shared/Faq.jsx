@@ -66,12 +66,15 @@ const Faq = () => {
           </div>
 
           <div className="flex gap-[14px] items-center mt-[52px]">
-            <Image
-              src="/images/faq-mail.svg"
-              width={48}
-              height={48}
-              alt="mes"
-            />
+            <a href="mailto:vordxtechnologies@gmail.com">
+              <Image
+                src="/images/faq-mail.svg"
+                width={48}
+                height={48}
+                alt="email icon"
+                className="cursor-pointer"
+              />
+            </a>
             <div>
               <p className="text-[#FFFFFF99] text-[14px] leading-5 pro-normal">
                 Do you prefer email communication?
@@ -106,19 +109,15 @@ const Faq = () => {
                       <h3 className="text-[#FFFFFFCC] text-[18px] sm:text-[24px] pro-normal leading-6 sm:leading-[32px]">
                         {item.question}
                       </h3>
-                      <span
-                        className={`${
-                          isActive ? "bg-[#707173] rounded-full" : ""
-                        }`}
-                      >
+                      <span>
                         <Image
                           src={
                             isActive
                               ? "/images/minus-sign.png"
                               : "/images/plusfaq.svg"
                           }
-                          width={isActive ? 28 : 32}
-                          height={isActive ? 28 : 32}
+                          width={isActive ? 25 : 32}
+                          height={isActive ? 32 : 32}
                           alt="faq icon"
                         />
                       </span>

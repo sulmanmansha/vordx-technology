@@ -3,7 +3,6 @@ import React from "react";
 import LatestBlogs from "./LatestBlogs";
 import Trends from "./Trends";
 import Faq from "@/app/shared/Faq";
-import Contact from "@/app/shared/Contact";
 
 const Blogs = () => {
   return (
@@ -19,7 +18,6 @@ const Blogs = () => {
       <LatestBlogs />
       <Trends />
       <Faq />
-      <Contact />
     </div>
   );
 };

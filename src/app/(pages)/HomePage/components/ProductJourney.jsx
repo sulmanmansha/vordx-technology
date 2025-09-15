@@ -162,7 +162,7 @@ const ProductJourney = () => {
                 <div>
                   <span
                     className={`text-[#A1F919] bg-opacity-10 text-[16px] rounded-full leading-5 block mb-4 p-[6px] w-[32px] ${
-                      currentSection === section.id
+                      hoveredId === section.id
                         ? "bg-[#A1F919]"
                         : "bg-transparent"
                     }`}

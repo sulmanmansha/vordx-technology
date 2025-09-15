@@ -70,7 +70,7 @@ export default function TestimonialSlider() {
     <section className=" text-white bg-[#14171C] p-4 md:p-20 !pr-0">
       <div className="container mx-auto">
         <div className="w-full flex justify-between items-center mb-10">
-          <span className="pro-medium ml-0 sm:ml-4 w-full max-w-[651px] text-[18px] leading-[25px] md:text-[36px] md:leading-[44px] lg:text-[48px] lg:leading-[60px]">
+          <span className="pro-medium w-full max-w-[651px] text-[18px] leading-[25px] md:text-[36px] md:leading-[44px] lg:text-[48px] lg:leading-[60px]">
             Trusted by leaders from various industries
           </span>
           <div className="flex gap-3 md:pr-20 pr-2">

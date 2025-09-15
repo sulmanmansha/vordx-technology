@@ -130,12 +130,12 @@ const HeroSection = ({ data }) => {
               ))}
         </div>
         {/* chats-btn */}
-        <button className=" text-[20px] absolute right-8 lg:bottom-8 bottom-1 text-[#14171C] flex gap-1 items-center px-4 py-3 rounded-[4px] bg-[#F8F8F8] shadow-[inset_0_0_12px_rgba(161,249,25,0.16),inset_0_0_8px_rgba(161,249,25,0.32),inset_0_0_12px_rgba(161,249,25,0.16)]">
+        <button className=" text-[20px] absolute leading-6 right-8 lg:bottom-8 bottom-1 text-[#14171C] flex gap-1 items-center px-4 py-3 rounded-[4px] bg-[#F8F8F8] shadow-[inset_0_0_12px_rgba(161,249,25,0.16),inset_0_0_8px_rgba(161,249,25,0.32),inset_0_0_12px_rgba(161,249,25,0.16)]">
           Hi! Lets Chat
           <Image
             src="/images/emoji.jpeg"
-            width={26}
-            height={26}
+            width={20}
+            height={20}
             alt=""
             className=""
           />

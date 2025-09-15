@@ -591,12 +591,12 @@ body {
     stroke-dashoffset: 0;
   }
 } */
-.ellipse-container {
+/* .ellipse-container {
   position: relative;
   width: 517px;
   height: 519px;
   overflow: hidden;
-}
+} */
 
 .ellipse {
   position: absolute;
