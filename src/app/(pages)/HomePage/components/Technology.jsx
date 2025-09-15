@@ -45,7 +45,7 @@ const Technology = () => {
               stability, high performance, and seamless integration with
               front-end layers.
             </h3>
-            <button className="py-3 w-full max-w-[195px] px-5 rounded-md bg-[#A1F919] text-[20px] text-[#222222] leading-6">
+            <button className="technology-service-btn">
               Book service
             </button>
           </div>
@@ -75,7 +75,7 @@ const Technology = () => {
               stability, high performance, and seamless integration with
               front-end layers.
             </h3>
-            <button className="py-3 w-full max-w-[195px] px-5 rounded-md bg-[#A1F919] text-[20px] text-[#222222] leading-6">
+            <button className="technology-service-btn">
               Book service
             </button>
           </div>
@@ -104,7 +104,7 @@ const Technology = () => {
               Designing and building engaging mobile applications that combine
               rich functionality with smooth performance across iOS and Android.
             </h3>
-            <button className="py-3 w-full max-w-[195px] px-5 rounded-md bg-[#A1F919] text-[20px] text-[#222222] leading-6">
+            <button className="technology-service-btn">
               Book service
             </button>
           </div>
@@ -134,7 +134,7 @@ const Technology = () => {
               seamlessly with your workflow to deliver quality digital solutions
               efficiently.
             </h3>
-            <button className="py-3 w-full max-w-[195px] px-5 rounded-md bg-[#A1F919] text-[20px] text-[#222222] leading-6">
+            <button className="technology-service-btn">
               Book service
             </button>
           </div>
@@ -164,7 +164,7 @@ const Technology = () => {
               business goals, streamlining operations and driving long-term
               success.
             </h3>
-            <button className="py-3 w-full max-w-[195px] px-5 rounded-md bg-[#A1F919] text-[20px] text-[#222222] leading-6">
+            <button className="technology-service-btn">
               Book service
             </button>
           </div>
@@ -194,7 +194,7 @@ const Technology = () => {
               usability, functionality, and visual consistency to elevate
               digital products.
             </h3>
-            <button className="py-3 w-full max-w-[195px] px-5 rounded-md bg-[#A1F919] text-[20px] text-[#222222] leading-6">
+            <button className="technology-service-btn">
               Book service
             </button>
           </div>

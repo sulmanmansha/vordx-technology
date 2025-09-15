@@ -882,6 +882,20 @@ input:-webkit-autofill:active {
   font-family: "pro-medium";
   color: #fff;
 }
+.technology-service-btn {
+  padding: 0.75rem 1.25rem;
+  width: 100%;
+  max-width: 195px;
+  border-radius: 0.375rem;
+  background-color: #a1f919;
+  font-size: 20px;
+  color: #222222;
+  line-height: 1.5rem;
+}
+.technology-service-btn:hover{
+  color: black;
+  background-color: white;
+}
 
 @media (max-width: 550px) {
   .article-description {
