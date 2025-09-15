@@ -6,7 +6,6 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  distDir: "out",
   skipTrailingSlashRedirect: true,
 
   eslint: {
