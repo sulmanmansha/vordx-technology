@@ -3,7 +3,7 @@
 import React, { Suspense, useEffect, useState } from "react";
 import HeroSection from "./components/HeroSection";
 import Sponser from "./components/Sponser";
-// import Technology from "./components/Technology";
+import Technology from "./components/Technology";
 import Calculations from "./components/Calculations";
 // import ProductJourney from "./components/ProductJourney";
 import OurHighlight from "./components/OurHighlight";
@@ -13,7 +13,7 @@ import Industries from "./components/Industries";
 // import FieldTabs from "./components/FieldTabs";
 import Testimonial from "../../shared/Testimonial";
 import Faq from "../../shared/Faq";
-import BestTechnologies from "./components/BestTechnologies";
+// import BestTechnologies from "./components/BestTechnologies";
 import { Rewards } from "@/app/api/Rewards";
 //*lasyloading*//
 const FieldTabs = React.lazy(() => import("./components/FieldTabs"));
@@ -49,7 +49,7 @@ const HomePage = () => {
       <Suspense fallback="please wait until page is load">
         <FieldTabs />
       </Suspense>
-      {/* <Technology /> */}
+      <Technology />
       <Suspense fallback="please wait until pages is load">
         <ProductJourney />
       </Suspense>
@@ -62,7 +62,7 @@ const HomePage = () => {
             <div className="ellipse green"></div>
           </div> */}
         </div>
-        <BestTechnologies />
+        {/* <BestTechnologies /> */}
         <Calculations />
         <div className="absolute -left-72 top-[40%] animate-ellipse">
           {/* <div className="ellipse-container blur-[150px] opacity-30">
