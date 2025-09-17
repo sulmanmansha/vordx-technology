@@ -130,16 +130,12 @@ const HeroSection = ({ data }) => {
               ))}
         </div>
         {/* chats-btn */}
-        <button className="chats-btn">
-          Hi! Lets Chat
-          <Image
-            src="/images/emoji.jpeg"
-            width={20}
-            height={20}
-            alt=""
-            className=""
-          />
-        </button>
+        <Link href="/contact">
+          <button className="chats-btn">
+            Hi! Lets Chat
+            <Image src="/images/emoji.jpeg" width={20} height={20} alt="" />
+          </button>
+        </Link>
       </div>
     </div>
   );

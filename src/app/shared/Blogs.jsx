@@ -42,8 +42,9 @@ function Blogs() {
             next big idea.
           </p>
         </div>
+        
         <div className="mt-8 md:mt-0">
-          <Button href="" text="Explore Articles" />
+          <Button href="/blogs" text="Explore Articles" />
         </div>
       </div>
 
@@ -65,7 +66,11 @@ function Blogs() {
                 className="w-full h-auto object-contain rounded-[20px] transition-transform duration-500 ease-in-out group-hover:scale-110"
               />
             </div>
-            <p className={`article-title mt-4 ${index > 0 ? 'flex justify-between' : ''}`}>
+            <p
+              className={`article-title mt-4 ${
+                index > 0 ? "flex justify-between" : ""
+              }`}
+            >
               <span>{article.category}</span>
               <span className="article-date ml-3">{article.date}</span>
             </p>

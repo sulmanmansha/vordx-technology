@@ -47,7 +47,7 @@ function Consultation() {
         </p>
         <Button
           className="mt-8 md:mt-[60px] inline-flex"
-          href=""
+          href="/contact"
           text="Book Your Free Consultation"
         />
       </div>

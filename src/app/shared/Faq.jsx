@@ -60,13 +60,14 @@ const Faq = () => {
             <p className="text-[20px] pro-medium leading-6 pt-6">
               Time to get introduced and explore how Vordx can help.
             </p>
-            <button className="py-3 px-4 cursor-pointer hover:bg-slate-100 hover:text-[#222] rounded-md bg-[#3E03B3] text-[20px] leading-6 pro-normal mt-7">
-              Book a call
-            </button>
+            <Link href="/contact">
+              <button className="py-3 px-4 cursor-pointer hover:bg-slate-100 hover:text-[#222] rounded-md bg-[#3E03B3] text-[20px] leading-6 pro-normal mt-7">
+                Book a call
+              </button>
+            </Link>
           </div>
-
-          <div className="flex gap-[14px] items-center mt-[52px]">
-            <a href="mailto:vordxtechnologies@gmail.com">
+          <a href="mailto:vordxtechnologies@gmail.com">
+            <div className="flex gap-[14px] items-center mt-[52px]">
               <Image
                 src="/images/faq-mail.svg"
                 width={48}
@@ -74,16 +75,17 @@ const Faq = () => {
                 alt="email icon"
                 className="cursor-pointer"
               />
-            </a>
-            <div>
-              <p className="text-[#FFFFFF99] text-[14px] leading-5 pro-normal">
-                Do you prefer email communication?
-              </p>
-              <p className="text-[14px] leading-5 pro-medium ">
-                vordxtechnologies@gmail.com
-              </p>
+
+              <div>
+                <p className="text-[#FFFFFF99] text-[14px] leading-5 pro-normal">
+                  Do you prefer email communication?
+                </p>
+                <p className="text-[14px] leading-5 pro-medium ">
+                  vordxtechnologies@gmail.com
+                </p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
 
         {/* Right Side FAQ Section (Accordion) */}
