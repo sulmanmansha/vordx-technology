@@ -49,10 +49,10 @@ const HeroSection = ({ data }) => {
       <div className="absolute inset-0 bg-gradient-to-b from-[#111520] to-[#0B101B] opacity-80 z-0"></div>
 
       {/* Content */}
-      <div className="relative z-10 pb-16 sm:pb-[60px] ">
+      <div className="relative z-10 pb-16 sm:pb-[60px] container-class">
         <Navbar />
 
-        <div className="flex flex-col justify-center items-center text-center gap-3 mt-10 sm:mt-20 mb-10 sm:mb-[106px] max-w-[990px] m-auto max-[500px]:mt-5">
+        <div className="flex flex-col justify-center items-center text-center gap-3 mt-10 sm:mt-20 mb-10 sm:mb-[106px] max-[500px]:mt-5 max-w-[928px] m-auto">
           <div>
             <span className="border border-[#FFFFFF1F] py-1.5 px-3 flex items-center justify-center gap-2 text-[#FFFFFF99] rounded-full">
               <Image src="/images/team.svg" width={12} height={12} alt="team" />

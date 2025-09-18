@@ -40,7 +40,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="bg-[#14171C] pt-[0px] md:pt-[60px] pb-9 px-[10px] sm:px-10 xl:px-[80px]">
+    <div className="bg-[#14171C] pt-[0px] md:pt-[60px] pb-9 px-[10px] sm:px-10 xl:px-[80px] container-class">
       <div className="container-class">
         <div className="flex flex-col md:flex-row justify-between gap-3 md:gap-2 md:items-center pb-10">
           <h1 className="text-[24px] pro-normal leading-7 max-w-[320px] w-full">

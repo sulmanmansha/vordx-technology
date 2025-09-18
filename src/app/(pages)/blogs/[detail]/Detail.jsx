@@ -38,7 +38,7 @@ const Detail = ({ slug }) => {
     };
 
     fetchBlogs();
-  }, [slug]); // ✅ dependency fixed here
+  }, [slug]); 
 
   const handleSubmit = async (e) => {
     e.preventDefault();

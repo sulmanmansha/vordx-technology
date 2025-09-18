@@ -101,7 +101,7 @@ function OurHighlight() {
   const smallCards = currentCards.filter((card) => !card.isLarge);
 
   return (
-    <div className="pt-[78px] pr-[100px] pb-[117px] pl-[100px] max-[700px]:pt-5 max-[700px]:pr-5 max-[700px]:pb-5 max-[700px]:pl-5 max-w-[1440px] m-auto ">
+    <div className="pt-[78px] pr-[100px] pb-[117px] pl-[100px] max-[700px]:pt-5 max-[700px]:pr-5 max-[700px]:pb-5 max-[700px]:pl-5 container-class">
       <div className="flex flex-col md:flex-row md:justify-between gap-[30px] md:gap-[59px]">
         {/* Left content: "Our highlights" and menu items */}
         <div className="w-full md:max-w-[299px]">

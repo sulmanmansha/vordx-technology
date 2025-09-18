@@ -44,7 +44,7 @@ const serviceCards = [
 
 const Services = () => {
   return (
-    <section className="py-8 px-8 md:py-20 md:px-[73px] bg-[#14171C]">
+    <section className="py-8 px-8 md:py-20 md:px-[73px] bg-[#14171C] container-class">
       <div className="flex flex-col items-center gap-2 mb-[60px]">
         <p className="text-[48px] max-[500px]:text-[30px] max-[500px]:leading-8 leading-[60px] text-[#fff] pro-medium">
           Industries We Serve

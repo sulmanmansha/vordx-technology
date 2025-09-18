@@ -35,7 +35,7 @@ function Consultation() {
     },
   ];
   return (
-    <div className="py-5 md:py-20 px-4 md:px-28 flex flex-col lg:flex-row justify-between lg:gap-20">
+    <div className="py-5 md:py-20 px-4 md:px-28 flex flex-col lg:flex-row justify-between lg:gap-20 container-class">
       {/* left-content */}
       <div className="w-full md:max-w-[583px]">
         <p className="text-[28px] md:text-[48px] leading-[34px] md:leading-[60px] pro-semibold text-[#fff]">

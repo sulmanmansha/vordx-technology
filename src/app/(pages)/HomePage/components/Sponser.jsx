@@ -21,7 +21,7 @@ const Sponser = ({ data }) => {
   const isLoading = !data || data.length === 0;
 
   return (
-    <div className="overflow-hidden w-full my-2">
+    <div className="overflow-hidden w-full my-2 container-class">
       <div
         className={`relative whitespace-nowrap py-5 ${
           shouldScroll ? "sponser-scroll" : "sponser-static"

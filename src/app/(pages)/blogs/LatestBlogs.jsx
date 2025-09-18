@@ -103,9 +103,8 @@ const LatestBlogs = () => {
               No Posts Available Yet
             </h2>
             <p className="text-white text-center pro-normal max-w-[300px]">
-
-              Looks like we don’t have any posts here right now. Please visit again.
-
+              Looks like we don’t have any posts here right now. Please visit
+              again.
             </p>
           </div>
         ) : (

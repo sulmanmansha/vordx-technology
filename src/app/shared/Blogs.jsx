@@ -31,7 +31,7 @@ const articles = [
 
 function Blogs() {
   return (
-    <div className="py-5 md:py-20 px-4 md:px-[119px]">
+    <div className="py-5 md:py-20 px-4 md:px-[119px] max-w-[1440px] m-auto">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end">
         <div>
           <p className="text-[32px] md:text-[48px] leading-[40px] md:leading-[60px] pro-medium">
