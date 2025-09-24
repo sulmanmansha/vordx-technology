@@ -31,19 +31,20 @@ const articles = [
 
 function Blogs() {
   return (
-    <div className="py-5 md:py-20 px-4 md:px-[119px]">
+    <div className="py-5 md:py-20 px-4 md:px-[119px] max-w-[1440px] m-auto">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end">
         <div>
           <p className="text-[32px] md:text-[48px] leading-[40px] md:leading-[60px] pro-medium">
-            Our articles & blog
+            Our articles & blogs
           </p>
           <p className="text-[#FFFFFF99] text-[16px] md:text-[17px] leading-6 mt-4">
-            Discover expert tips, industry insights, and stories to inspire your
+            Discover expert tips, industry insights, and storis to inspire yours
             next big idea.
           </p>
         </div>
+        
         <div className="mt-8 md:mt-0">
-          <Button href="" text="Explore Articles" />
+          <Button href="/blogs" text="Explore Articles" />
         </div>
       </div>
 
@@ -65,7 +66,11 @@ function Blogs() {
                 className="w-full h-auto object-contain rounded-[20px] transition-transform duration-500 ease-in-out group-hover:scale-110"
               />
             </div>
-            <p className={`article-title mt-4 ${index > 0 ? 'flex justify-between' : ''}`}>
+            <p
+              className={`article-title mt-4 ${
+                index > 0 ? "flex justify-between" : ""
+              }`}
+            >
               <span>{article.category}</span>
               <span className="article-date ml-3">{article.date}</span>
             </p>

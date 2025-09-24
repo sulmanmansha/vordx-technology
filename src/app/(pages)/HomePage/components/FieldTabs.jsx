@@ -72,7 +72,7 @@ function CustomTabPanel(props) {
       aria-labelledby={`tab-${index}`}
       {...other}
     >
-      {value === index && <Box className="pt-10 w-full">{children}</Box>}
+      {value === index && <Box className="pt-12 w-full">{children}</Box>}
     </div>
   );
 }
@@ -91,19 +91,23 @@ export default function FieldTabs() {
   };
 
   return (
-    <div className="py-6 md:py-20 px-2.5 sm:px-10 lg:px-[44px] flex flex-col justify-center items-center text-center container-class">
+    <div className="pt-6 pb-6 md:pb-24 px-2.5 sm:px-10 lg:px-[58px] flex flex-col justify-center items-center text-center container-class">
       <div>
-        <h1 className="text-[32px] sm:text-[40px] md:text-[48px] pro-medium leading-10 sm:leading-[50px] md:leading-[60px] max-w-[763px] w-full">
-          Building digital experiences that inspire and deliver results
+        <h1 className="text-[32px] sm:text-[40px] md:text-[48px] pro-medium leading-10 sm:leading-[50px] md:leading-[60px] max-w-[800px] w-full">
+          Building digi<span className="italic">t</span>al
+          <span className="italic"> e</span>xperiences tha
+          <span className="italic">t</span> inspir
+          <span className="italic">e</span> <span className="italic">a</span>nd
+          deliver res<span className="italic">u</span>lts
         </h1>
-        <p className="text-[18px] pro-normal leading-6 opacity-80 pt-4">
+        <p className="text-[20px] pro-normal leading-6 text-[#FFFFFF99] pt-4 w-full max-w-[680px]">
           Explore our success stories & discover how we’ve helped businesses
           like yours overcome challenges
         </p>
       </div>
 
       {/* Tabs */}
-      <Box className="pt-4 flex justify-center w-full">
+      {/* <Box className="pt-4 flex justify-center w-full">
         <StyledTabs
           value={value}
           onChange={handleChange}
@@ -116,7 +120,7 @@ export default function FieldTabs() {
           <StyledTab label="Full stack" />
           <StyledTab label="Mobile app" />
         </StyledTabs>
-      </Box>
+      </Box> */}
 
       {/* Tab Panels */}
       <CustomTabPanel value={value} index={0}>

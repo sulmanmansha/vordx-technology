@@ -1,13 +1,12 @@
-import React from 'react'
-import Work from './Work'
+import React from "react";
+import Work from "./Work";
 
 const page = () => {
   return (
     <div>
-        <Work />
-
+      <Work />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

@@ -44,7 +44,7 @@ const serviceCards = [
 
 const Services = () => {
   return (
-    <section className="py-8 px-8 md:py-20 md:px-[73px] bg-[#14171C]">
+    <section className="py-8 px-8 md:py-20 md:px-[73px] bg-[#14171C] container-class">
       <div className="flex flex-col items-center gap-2 mb-[60px]">
         <p className="text-[48px] max-[500px]:text-[30px] max-[500px]:leading-8 leading-[60px] text-[#fff] pro-medium">
           Industries We Serve
@@ -56,7 +56,7 @@ const Services = () => {
       </div>
       <div className="">
         {/* First Row: 2 Cards */}
-        <div className="flex flex-col lg:flex-row gap-6 mb-6">
+        <div className="flex flex-col lg:flex-row gap-5 mb-6">
           {serviceCards
             .filter((card) => card.style === "large")
             .map((card, index) => (
@@ -85,7 +85,7 @@ const Services = () => {
         </div>
 
         {/* Second Row: 3 Cards */}
-        <div className="flex flex-col lg:flex-row gap-6">
+        <div className="flex flex-col lg:flex-row gap-5">
           {serviceCards
             .filter((card) => card.style === "small")
             .map((card, index) => (

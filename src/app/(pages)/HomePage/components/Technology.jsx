@@ -9,7 +9,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 
 const Technology = () => {
   return (
-    <div className="py-6 md:py-20 px-2.5 sm:px-10 lg:px-[48px] flex flex-col justify-center items-center text-center container-class">
+    <div className="pb-6 md:pb-[108px] pt-6 px-2.5 sm:px-10 lg:px-[48px] flex flex-col justify-center items-center text-center container-class">
       <div>
         <h1 className="text-[28px] sm:text-[40px] md:text-[48px] pro-medium leading-8 sm:leading-[50px] md:leading-[60px] max-w-[763px] w-full">
           Purpose-built software solutions for your technology needs
@@ -32,7 +32,7 @@ const Technology = () => {
           {/* Content */}
           <div className="relative z-20">
             <p className="sm:text-[36px] text-[28px] leading-8 sm:leading-10 pro-bold">
-              Front - end Development
+              Front - End Development
             </p>
           </div>
           {/* Overlay */}
@@ -45,9 +45,7 @@ const Technology = () => {
               stability, high performance, and seamless integration with
               front-end layers.
             </h3>
-            <button className="technology-service-btn">
-              Book service
-            </button>
+            <button className="technology-service-btn">Book service</button>
           </div>
         </div>
 
@@ -75,9 +73,7 @@ const Technology = () => {
               stability, high performance, and seamless integration with
               front-end layers.
             </h3>
-            <button className="technology-service-btn">
-              Book service
-            </button>
+            <button className="technology-service-btn">Book service</button>
           </div>
         </div>
 
@@ -104,9 +100,7 @@ const Technology = () => {
               Designing and building engaging mobile applications that combine
               rich functionality with smooth performance across iOS and Android.
             </h3>
-            <button className="technology-service-btn">
-              Book service
-            </button>
+            <button className="technology-service-btn">Book service</button>
           </div>
         </div>
 
@@ -134,9 +128,7 @@ const Technology = () => {
               seamlessly with your workflow to deliver quality digital solutions
               efficiently.
             </h3>
-            <button className="technology-service-btn">
-              Book service
-            </button>
+            <button className="technology-service-btn">Book service</button>
           </div>
         </div>
 
@@ -164,9 +156,7 @@ const Technology = () => {
               business goals, streamlining operations and driving long-term
               success.
             </h3>
-            <button className="technology-service-btn">
-              Book service
-            </button>
+            <button className="technology-service-btn">Book service</button>
           </div>
         </div>
 
@@ -194,9 +184,7 @@ const Technology = () => {
               usability, functionality, and visual consistency to elevate
               digital products.
             </h3>
-            <button className="technology-service-btn">
-              Book service
-            </button>
+            <button className="technology-service-btn">Book service</button>
           </div>
         </div>
       </div>

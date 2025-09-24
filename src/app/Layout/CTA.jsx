@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 import Button from "../shared/Button";
 
 const CTA = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);``
 
   return (
-    <div className="container-class relative px-[10px] md:px-20 py-12">
+    <div className="container-class relative px-[10px] md:px-20 py-12 bg-[#101215]">
       <div
         className="relative rounded-[20px] overflow-hidden cards group border-line-effect"
         onMouseEnter={() => setIsHovered(true)}

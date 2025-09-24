@@ -12,6 +12,7 @@ const Footer = () => {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -32,66 +33,38 @@ const Footer = () => {
     router.push("/");
   };
 
-  // 🔹 HandleEmailChange function ab sirf email state ko update karega
   const handleEmailChange = (e) => {
     const value = e.target.value;
     setEmail(value);
-    // setIsFilled(value.length > 0);
   };
 
-  return (
-    <div className="bg-[#14171C] pt-[0px] md:pt-[60px] pb-9 px-[10px] sm:px-10 xl:px-[80px]">
-      <div className="container-class">
-        <div className="flex flex-col md:flex-row justify-between gap-3 md:gap-2 md:items-center pb-10">
-          <h1 className="text-[24px] pro-normal leading-7 max-w-[320px] w-full">
-            Join our newsletter to keep up to date with us!
-          </h1>
-          <form
-            onSubmit={handleSubmit}
-            className="flex flex-col sm:flex-row items-center gap-2"
-          >
-            <div className="w-full relative">
-              <Image
-                src="/images/inputemail.svg"
-                width={20}
-                height={20}
-                alt="inputemail"
-                //  Yahan se conditional class hata di gayi hai
-                className={`absolute top-4 left-6`}
-              />
-              <input
-                type="email"
-                name="email"
-                required
-                value={email}
-                // Naya handler yahan use karein
-                onChange={handleEmailChange}
-                placeholder="Enter your email"
-                className="bg-transparent border border-[#FFFFFF3D] rounded-md py-3.5 px-6 w-full md:w-[360px] flex items-center outline-none pl-12 pro-normal text-[14px] leading-5 focus:bg-transparent focus:border-[#FFFFFF3D]"
-                autoComplete="off"
-              />
-            </div>
-            <button
-              type="submit"
-              className={`primary-btn ${
-                loading ? "opacity-70 cursor-not-allowed" : ""
-              }`}
-              disabled={loading}
-            >
-              {loading ? "Subscribing..." : "Subscribe"}
-            </button>
-          </form>
-        </div>
+  // 🌍 Multiple data objects for mapping
+  const consultationdata = [
+    {
+      country: "Pakistan",
+      icon: "/images/consulation3.svg",
+      address: "145 G, Sector G Dha Phase 1, Lahore, 54810",
+      address_title: "Address",
+      phone_title: "Phone No",
+      phone_no: "+92 324 0110040",
+      width: "84",
+      height: "84",
+    },
+  ];
 
-        <div className="grid grid-cols-12 gap-8 py-10 border-y border-[#FFFFFF1F]">
-          <div className="col-span-8 md:col-span-12 lg:col-span-4 xl:col-span-6 space-y-[54px]">
+  return (
+    <div className="bg-[#14171C] pt-[0px] md:pt-[60px] pb-[31px] px-[10px] sm:px-10 xl:px-[80px] container-class">
+      <div className="container-class">
+        <div className="flex flex-col md:flex-row justify-between gap-3 md:gap-2 md:items-center pb-4">
+          <div className="col-span-8 md:col-span-12 lg:col-span-4 xl:col-span-6">
             <Image
               src="/images/footerlogo.png"
               width={200}
               height={58}
               alt="footerlogo"
+              className=""
             />
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 mt-8">
               <Link
                 href="https://www.facebook.com/vordxofficial/"
                 target="_blank"
@@ -132,11 +105,87 @@ const Footer = () => {
               </Link>
             </div>
           </div>
+          <div>
+            <h1 className="text-[24px] pro-normal leading-7 max-w-[320px] w-full mb-6">
+              Join our newsletter to keep up to date with us!
+            </h1>
+            <form
+              onSubmit={handleSubmit}
+              className="flex flex-col sm:flex-row items-center gap-2"
+            >
+              <div className="w-full relative">
+                <Image
+                  src="/images/inputemail.svg"
+                  width={20}
+                  height={20}
+                  alt="inputemail"
+                  className={`absolute top-4 left-6`}
+                />
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  value={email}
+                  onChange={handleEmailChange}
+                  placeholder="Enter your email"
+                  className="bg-transparent border border-[#FFFFFF3D] rounded-md py-3.5 px-6 w-full md:w-[360px] flex items-center outline-none pl-12 pro-normal text-[14px] leading-5 focus:bg-transparent focus:border-[#FFFFFF3D]"
+                  autoComplete="off"
+                />
+              </div>
+              <button
+                type="submit"
+                className={`primary-btn ${
+                  loading ? "opacity-70 cursor-not-allowed" : ""
+                }`}
+                disabled={loading}
+              >
+                {loading ? "Subscribing..." : "Subscribe"}
+              </button>
+            </form>
+          </div>
+        </div>
 
-          <div className="flex flex-col sm:flex-row items-start justify-between gap-5 md:gap-[64px] col-span-6 lg:col-span-8 xl:col-span-6 max-[640px]:justify-center">
+        {/* Mapping the data here */}
+        <div className="flex justify-between py-8 border-b border-[#FFFFFF1F] flex-wrap items-center">
+          {consultationdata.map((consultation, index) => (
+            <div
+              key={index} 
+              className="flex gap-3 items-start max-[500px]:flex-col max-[992px]:mb-4"
+            >
+              <Image
+                src={consultation.icon}
+                width={consultation.width}
+                height={consultation.height}
+                alt=""
+                className=""
+              />
+              <div className="flex flex-col gap-[4px]">
+                <p className="text-[20px] leading-6 pro-semibold">
+                  {consultation.country}
+                </p>
+                <p>
+                  <span className="text-[16px] text-[#fff] leading-5 pro-semibold">
+                    {consultation.address_title}
+                  </span>
+                  <span className="text-[#FFFFFFB8] text-[16px] leading-7 pro-normal pl-1">
+                    {consultation.address}
+                  </span>
+                </p>
+                <p>
+                  <span className="text-[16px] leading-5 pro-semibold">
+                    {consultation.phone_title}
+                  </span>
+                  <span className="text-[#FFFFFFB8] text-[16px] leading-7 pro-normal pl-1">
+                    {consultation.phone_no}
+                  </span>
+                </p>
+              </div>
+            </div>
+          ))}
+          <div className="flex flex-col sm:flex-row items-start gap-5 md:gap-[64px] col-span-6 lg:col-span-8 xl:col-span-6 max-[640px]:justify-center">
             {/* Pages Section */}
             <div>
-              <h3 className="text-[16px] text-[#fff] pro-semibold leading-normal mb-5">
+              <h3 className="text-[16px] text-[#fff] pro-semibold leading-normal mb-8">
                 Pages
               </h3>
               <ul className="space-y-[18px] font-16 pro-normal leading-normal opacity-[72%]">
@@ -154,17 +203,16 @@ const Footer = () => {
 
             {/* Contact Section */}
             <div>
-              <h3 className="text-[16px] text-[#fff] pro-semibold leading-normal mb-5">
+              <h3 className="text-[16px] text-[#fff] pro-semibold leading-normal mb-8">
                 Contact us
               </h3>
               <ul className="space-y-[18px] font-16 pro-normal leading-normal opacity-[72%]">
                 <li>
-                  {/* Click to call */}
                   <a
                     href="tel:+923240110040"
                     className="text-[16px] pro-normal leading-normal"
                   >
-                    +92 324 0110040
+                    UX Design
                   </a>
                 </li>
                 <li>
@@ -172,19 +220,17 @@ const Footer = () => {
                     href="mailto:contact@vordx.com"
                     className="text-[16px] pro-normal leading-normal"
                   >
-                    contact@vordx.com
+                    Web Development
                   </a>
                 </li>
-
                 <li>
-                  {/* Click to visit website */}
                   <a
                     href="https://vordxtechnologies.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[16px] pro-normal leading-normal"
                   >
-                    vordx.com
+                    AI Integration
                   </a>
                 </li>
               </ul>
@@ -192,16 +238,16 @@ const Footer = () => {
 
             {/* Location */}
             <div>
-              <h3 className="text-[16px] text-[#fff] pro-semibold leading-normal mb-5">
+              <h3 className="text-[16px] text-[#fff] pro-semibold leading-normal mb-8">
                 Location
               </h3>
-              <ul className="space-y-[18px] font-16 pro-normal leading-normal opacity-[72%]">
+              <ul className="space-y-[18px]">
                 <li>
                   <Link
                     href="https://www.google.com/maps/search/?api=1&query=145+G,+Sector+G,+Dha+Phase+1,+Lahore,+54810"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[16px] pro-normal leading-[28px]"
+                    className="text-[16px] pro-normal leading-[28px] text-[#FFFFFFB8]"
                   >
                     145 G, Sector G <br /> Dha Phase 1, <br /> Lahore, 54810
                   </Link>
@@ -210,9 +256,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
         {/* Footer Bottom */}
-        <div className="flex flex-col sm:flex-row md:items-center gap-3 justify-between pt-10">
+        <div className="flex flex-col sm:flex-row md:items-center gap-3 justify-between pt-8">
           <h1 className="opacity-80 pro-normal text-[14px] leading-normal">
             © 2025 Vordx Technologies. All rights reserved
           </h1>

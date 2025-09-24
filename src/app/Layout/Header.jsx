@@ -100,10 +100,10 @@ export default function Navbar() {
   const hasJobs = jobs?.length > 0 && !isLoading && !error;
 
   return (
-    <header className="bg-transparent relative z-50">
+    <header className="bg-transparent relative z-50 max-w-[1440px] m-auto">
       <nav
         aria-label="Global"
-        className="mx-auto flex items-center justify-between py-[23px] px-5 sm:px-10"
+        className="mx-auto flex items-center justify-between py-[24px] px-5 sm:px-[50px]"
       >
         {/* Mobile Menu Button */}
         <div className="flex items-center gap-3 ">
@@ -127,14 +127,19 @@ export default function Navbar() {
         {/* Logo */}
         <div className="hidden sm:flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
-            <Image src="/images/footerlogo.png" width={163} height={48} alt="logo" />
+            <Image
+              src="/images/footerlogo.png"
+              width={163}
+              height={48}
+              alt="logo"
+            />
           </Link>
         </div>
 
         {/* Desktop Menu */}
         <div
           ref={megaMenuRef}
-          className="hidden lg:flex lg:gap-x-8 bg-[#FFFFFF0F] backdrop-blur-[17.5px] shadow-[inset_0_0_6px_0_rgba(255,255,255,0.12)] rounded-xl px-5 py-3 items-center relative"
+          className="hidden lg:flex lg:gap-x-8 bg-[#FFFFFF0F] backdrop-blur-[17.5px] shadow-[inset_0_0_6px_0_rgba(255,255,255,0.12)] rounded-full px-5 py-3 items-center relative"
         >
           <button
             ref={servicesButtonRef}
@@ -154,7 +159,11 @@ export default function Navbar() {
           <Link
             href="/work"
             className={`text-[14px] pro-medium leading-5 transition-colors duration-300
-              ${pathname === "/work" ? "text-[#9aee1a]" : "text-white hover:text-[#9aee1a]"}
+              ${
+                pathname === "/work"
+                  ? "text-[#9aee1a]"
+                  : "text-white hover:text-[#9aee1a]"
+              }
             `}
           >
             Work
@@ -164,7 +173,11 @@ export default function Navbar() {
           <Link
             href="/industry"
             className={`text-[14px] pro-medium leading-5 transition-colors duration-300
-              ${pathname === "/industry" ? "text-[#9aee1a]" : "text-white hover:text-[#9aee1a]"}
+              ${
+                pathname === "/industry"
+                  ? "text-[#9aee1a]"
+                  : "text-white hover:text-[#9aee1a]"
+              }
             `}
           >
             Industries
@@ -174,7 +187,11 @@ export default function Navbar() {
           <Link
             href="/about"
             className={`text-[14px] pro-medium leading-5 transition-colors duration-300
-              ${pathname === "/about" ? "text-[#9aee1a]" : "text-white hover:text-[#9aee1a]"}
+              ${
+                pathname === "/about"
+                  ? "text-[#9aee1a]"
+                  : "text-white hover:text-[#9aee1a]"
+              }
             `}
           >
             About
@@ -185,13 +202,17 @@ export default function Navbar() {
             <Link
               href="/career"
               className={`text-[14px] pro-medium leading-5 transition-colors duration-300
-                ${pathname === "/career" ? "text-[#9aee1a]" : "text-white hover:text-[#9aee1a]"}
+                ${
+                  pathname === "/career"
+                    ? "text-[#9aee1a]"
+                    : "text-white hover:text-[#9aee1a]"
+                }
               `}
             >
               Careers
             </Link>
             {hasJobs && (
-              <span className="text-[12px] bg-[#CCFFBC] px-2 py-1 rounded-full text-[#42923A] pro-normal leading-5 whitespace-nowrap">
+              <span className="text-[12px] bg-[#CCFFBC] px-2 py-1 rounded-full text-[#42923A] pro-medium leading-4 whitespace-nowrap">
                 Hiring!
               </span>
             )}
@@ -294,7 +315,12 @@ export default function Navbar() {
         <DialogPanel className="fixed inset-y-0 left-0 z-10 w-full h-fit overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <Link href="/" className="-m-1.5 p-1.5">
-              <Image src="/images/footerlogo.png" width={80} height={40} alt="logo" />
+              <Image
+                src="/images/footerlogo.png"
+                width={80}
+                height={40}
+                alt="logo"
+              />
             </Link>
             <button
               type="button"

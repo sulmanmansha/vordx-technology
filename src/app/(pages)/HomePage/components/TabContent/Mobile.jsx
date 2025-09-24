@@ -3,94 +3,178 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 
-const data = [
-  {
-    id: 1,
-    src: "/images/ui1.png",
-    title: "Twinciti",
-    para: "Twinciti is an AI-powered platform designed to simplify your tasks, inspire creativity, and provide intelligent solutions.",
-    tag: "DASHBOARD",
-    date: "AUGUST 27, 2024",
-  },
-  {
-    id: 2,
-    src: "/images/ui2.png",
-    title: "Copy Crusher",
-    para: "In this web design, the most frequently used devices are designed to stay at the top to reduce user steps to increase usability.",
-    tag: "DASHBOARD",
-    date: "AUGUST 27, 2024",
-  },
-  {
-    id: 3,
-    src: "/images/ui3.png",
-    title: "Enfin Libra",
-    para: "Islamly is a spiritual and educational platform designed to connect students with qualified tutors for Quran learning,",
-    tag: "DASHBOARD",
-    date: "AUGUST 27, 2024",
-  },
-  {
-    id: 4,
-    src: "/images/ui4.png",
-    title: "Islamly App",
-    para: "Islamly is a spiritual and educational platform designed to connect students with qualified tutors for Quran learning,",
-    tag: "DASHBOARD",
-    date: "AUGUST 27, 2024",
-  },
-];
-
-const Mobile = () => {
+const Backend = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      {data.map((item, index) => (
-        <motion.div
-          key={item.id}
-          className="w-full h-full relative group"
-          initial={{ opacity: 0, y: 30 }} // Start hidden & below
-          animate={{ opacity: 1, y: 0 }} // Fade in + slide up
-          transition={{ duration: 0.6, delay: index * 0.3 }} // Delay for staggered animation
-        >
-          <div className="relative w-full h-full rounded-2xl overflow-hidden">
-            {/* Image */}
-            <Image
-              src={item.src}
-              alt={item.title}
-              width={603}
-              height={450}
-              className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-
-            {/* Black Gradient Overlay on hover */}
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 pointer-events-none">
-              <div className="w-full h-full bg-gradient-to-b from-[#0C0C0C05] to-[#000000DB]" />
-            </div>
-
-            {/* Hover Content Sliding from Bottom */}
-            <div className="absolute inset-0 flex flex-col justify-between p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-20">
-              {/* Tags */}
-              <div className="flex justify-between mb-4">
-                <span className="bg-[#0000007A] px-4 py-2 rounded-full pro-normal text-[12px] sm:text-[16px] leading-5 text-white">
-                  {item.tag}
-                </span>
-                <span className="bg-[#0000007A] px-4 py-2 rounded-full pro-normal text-[12px] sm:text-[16px] leading-5 text-white">
-                  {item.date}
-                </span>
-              </div>
-
-              {/* Title & Description */}
-              <div>
-                <h3 className="text-[20px] md:text-[40px] font-bold leading-12 text-white">
-                  {item.title}
-                </h3>
-                <p className="mt-[10px] text-[16px] md:text-[18px] pro-normal leading-6 text-white">
-                  {item.para}
-                </p>
-              </div>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-[14px]">
+      {/* Card 1 */}
+      <motion.div
+        className="md:col-span-2 relative h-[560px] rounded-[20px] overflow-hidden group"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+      >
+        <Image
+          src="/images/ui1.svg"
+          fill
+          alt="team"
+          className="object-cover w-full h-full"
+        />
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/40 translate-y-full group-hover:translate-y-0 transition-all duration-700"></div>
+        {/* Content */}
+        <div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-700 group-hover:delay-500">
+          <h3 className="md:text-[36px] text-[26px] leading-9 md:leading-[44px] text-start pro-medium">
+            A modern, trustworthy, and high performance platform for Copy Trading.
+          </h3>
+          <div className="flex items-center justify-between text-sm flex-wrap">
+            <a
+              href="#"
+              className="flex pro-normal items-center gap-2 text-[14px]"
+            >
+              View Case Study <span className="pt-1 text-[21px]">→</span>
+            </a>
+            <span className="text-[14px] pro-normal text-[#FFFFFFCC] leading-5">
+              Mobile App, UI/UX, Branding
+            </span>
+          </div>
+        </div>
+      </motion.div>
+      
+      {/* Card 2 */}
+      <motion.div
+        className="relative h-[560px] rounded-[20px] overflow-hidden group"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.6 }} 
+      >
+        <Image
+          src="/images/ui2.svg"
+          fill
+          alt="team"
+          className="object-cover w-full h-full"
+        />
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/40 translate-y-full group-hover:translate-y-0 transition-all duration-700"></div>
+        {/* Content */}
+        <div className="absolute inset-0 flex flex-col justify-between pt-4 pr-[18px] pb-6 pl-4 sm:pt-6 sm:pr-[22px] sm:pb-9 sm:pl-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-700 group-hover:delay-500">
+          <h3 className="md:text-[36px] text-[26px] leading-9 md:leading-[44px] text-left pro-medium">
+            A modern, trustworthy, <br /> and high performance platform for Copy
+            <br />
+            Trading.
+          </h3>
+          <div className="flex items-center justify-between text-sm flex-wrap">
+            <a
+              href="#"
+              className="flex pro-normal items-center gap-2 text-[14px]"
+            >
+              View Case Study <span className="pt-1 text-[21px]">→</span>
+            </a>
+            <span className="text-[14px] pro-normal text-[#FFFFFFCC] leading-5">
+              Mobile App, UI/UX, Branding
+            </span>
+          </div>
+        </div>
+      </motion.div>
+      
+      {/* Card 3 */}
+      <motion.div
+        className="md:col-span-3 relative h-[748px] rounded-[20px] overflow-hidden group"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.9 }} 
+      >
+        <Image
+          src="/images/ui3.svg"
+          fill
+          alt="team"
+          className="object-cover w-full h-full"
+        />
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/40 translate-y-full group-hover:translate-y-0 transition-all duration-700"></div>
+        {/* Content */}
+        <div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-700 group-hover:delay-500">
+          <h3 className="md:text-[36px] text-[26px] leading-9 md:leading-[44px] w-auto lg:w-[620px] text-start pro-medium">
+            A modern, trustworthy, and high performance platform for Copy Trading.
+          </h3>
+          <div className="flex items-center justify-between text-sm flex-wrap">
+            <a
+              href="#"
+              className="flex pro-normal items-center gap-2 text-[14px]"
+            >
+              View Case Study <span className="pt-1 text-[21px]">→</span>
+            </a>
+            <span className="text-[14px] pro-normal text-[#FFFFFFCC] leading-5">
+              Mobile App, UI/UX, Branding
+            </span>
+          </div>
+        </div>
+      </motion.div>
+      
+      {/* Card 4 and 5 */}
+      <motion.div
+        className="md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-[14px]"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 1.2 }}
+      >
+        <div className="relative h-[528px] w-full rounded-[20px] overflow-hidden group">
+          <Image
+            src="/images/ui4.svg"
+            fill
+            alt="team"
+            className="object-cover w-full h-full"
+          />
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-black/40 translate-y-full group-hover:translate-y-0 transition-all duration-700"></div>
+          {/* Content */}
+          <div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-700 group-hover:delay-500">
+            <h3 className="md:text-[36px] text-[26px] leading-9 md:leading-[44px] w-auto lg:w-[523px] text-start pro-medium">
+              A modern, trustworthy, and high performance platform for Copy Trading.
+            </h3>
+            <div className="flex items-center justify-between text-sm flex-wrap">
+              <a
+                href="#"
+                className="flex items-center pro-normal gap-2 text-[14px]"
+              >
+                View Case Study <span className="pt-1 text-[21px]">→</span>
+              </a>
+              <span className="text-[14px] pro-normal text-[#FFFFFFCC] leading-5">
+                Mobile App, UI/UX, Branding
+              </span>
             </div>
           </div>
-        </motion.div>
-      ))}
+        </div>
+        
+        <div className="relative h-[528px] w-full rounded-2xl overflow-hidden group">
+          <Image
+            src="/images/ui5.svg"
+            fill
+            alt="team"
+            className="object-cover w-full h-full"
+          />
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-black/40 translate-y-full group-hover:translate-y-0 transition-all duration-700"></div>
+          {/* Content */}
+          <div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-700 group-hover:delay-500">
+            <h3 className="md:text-[36px] text-[26px] leading-9 md:leading-[44px] w-auto lg:w-[523px] text-start pro-medium">
+              A modern, trustworthy, and high performance platform for Copy Trading.
+            </h3>
+            <div className="flex items-center justify-between text-sm flex-wrap">
+              <a
+                href="#"
+                className="flex pro-normal items-center gap-2 text-[14px]"
+              >
+                View Case Study <span className="pt-1 text-[21px]">→</span>
+              </a>
+              <span className="text-[14px] pro-normal text-[#FFFFFFCC] leading-5">
+                Mobile App, UI/UX, Branding
+              </span>
+            </div>
+          </div>
+        </div>
+      </motion.div>
     </div>
   );
 };
 
-export default Mobile;
+export default Backend;

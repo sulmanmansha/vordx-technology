@@ -8,10 +8,13 @@ import { useState, useEffect } from "react";
 
 const HeroSection = ({ data }) => {
   const headings = [
-    "Accelerating Productivity with AI-Powered Design Solutions",
+    // Corrected heading with <span> tags for italic font
+    <span>
+      Fro<span className="italic">m</span> Design to <span className="italic"> AI </span> Developmen
+      <span className="italic">t</span>
+    </span>,
     "Human-Centered Design Meets the Power of AI",
   ];
-
   const [currentHeadingIndex, setCurrentHeadingIndex] = useState(0);
   const [isFading, setIsFading] = useState(false);
 
@@ -49,26 +52,26 @@ const HeroSection = ({ data }) => {
       <div className="absolute inset-0 bg-gradient-to-b from-[#111520] to-[#0B101B] opacity-80 z-0"></div>
 
       {/* Content */}
-      <div className="relative z-10 pb-16 sm:pb-[60px] ">
+      <div className="relative z-10 pb-16 sm:pb-[60px] container-class">
         <Navbar />
 
-        <div className="flex flex-col justify-center items-center text-center gap-3 mt-10 sm:mt-20 mb-10 sm:mb-[106px] max-w-[990px] m-auto max-[500px]:mt-5">
+        <div className="flex flex-col justify-center items-center text-center gap-3 mt-10 sm:mt-20 mb-10 sm:mb-[106px] max-[500px]:mt-5 max-w-[1000px] m-auto">
           <div>
-            <span className="border border-[#FFFFFF1F] py-1.5 px-3 flex items-center justify-center gap-2 text-[#FFFFFF99] rounded-full">
-              <Image src="/images/team.svg" width={12} height={12} alt="team" />
-              <p className="tracking-[0.64px] uppercase leading-3 clash-medium text-[8px]">
+            <span className="border border-[#FFFFFF1F] py-1.5 px-3 flex items-center justify-center gap-1 text-[#FFFFFF99] rounded-full">
+              <Image src="/images/team.png" width={12} height={12} alt="team" />
+              <p className="tracking-[0.64px] uppercase leading-[14px] pro-normal italic text-[12px]">
                 Dedicated development team
               </p>
             </span>
           </div>
           <h1
-            className={`text-[35px] sm:text-[40px] md:text-[64px] lg:text-[68px] pro-medium leading-[45px] sm:leading-[50px] md:leading-[80px] text-white px-2 sm:px-0 transition-opacity duration-500 ease-in-out ${
+            className={`text-[35px] sm:text-[40px] w-full max-w-[980px] md:text-[64px] lg:text-[88px] pro-medium leading-[45px] sm:leading-[50px] md:leading-[100px] text-white px-2 sm:px-0 transition-opacity duration-500 ease-in-out ${
               isFading ? "opacity-0" : "opacity-100"
             }`}
           >
             {headings[currentHeadingIndex]}
           </h1>
-          <p className="text-[#FFFFFF99] text-[16px] sm:text-[24px] pro-normal leading-7 md:leading-8 px-5 sm:px-0">
+          <p className="text-[#FFFFFF99] text-[16px] sm:text-[20px] pro-normal leading-6 md:leading-7 px-5 sm:px-0">
             We are a full-stack software agency transforming ideas into
             impactful digital <br className="hidden md:block" /> solutions. From
             web and mobile app development to intuitive UX UI design.
@@ -130,16 +133,12 @@ const HeroSection = ({ data }) => {
               ))}
         </div>
         {/* chats-btn */}
-        <button className=" text-[20px] absolute leading-6 right-8 lg:bottom-8 bottom-1 text-[#14171C] flex gap-1 items-center px-4 py-3 rounded-[4px] bg-[#F8F8F8] shadow-[inset_0_0_12px_rgba(161,249,25,0.16),inset_0_0_8px_rgba(161,249,25,0.32),inset_0_0_12px_rgba(161,249,25,0.16)]">
-          Hi! Lets Chat
-          <Image
-            src="/images/emoji.jpeg"
-            width={20}
-            height={20}
-            alt=""
-            className=""
-          />
-        </button>
+        <Link href="/contact">
+          <button className="chats-btn">
+            Hi! Lets Chat
+            <Image src="/images/emoji.jpeg" width={20} height={20} alt="" />
+          </button>
+        </Link>
       </div>
     </div>
   );
