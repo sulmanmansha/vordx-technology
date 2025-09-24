@@ -35,7 +35,7 @@ function Blogs() {
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end">
         <div>
           <p className="text-[32px] md:text-[48px] leading-[40px] md:leading-[60px] pro-medium">
-            Our articles & blogs
+            Our articles & blog
           </p>
           <p className="text-[#FFFFFF99] text-[16px] md:text-[17px] leading-6 mt-4">
             Discover expert tips, industry insights, and stories to inspire your

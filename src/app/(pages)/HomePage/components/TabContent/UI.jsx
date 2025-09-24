@@ -119,7 +119,7 @@ const UI = () => {
           {/* Content */}
           <div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-700 group-hover:delay-500">
             <h3 className="md:text-[36px] text-[26px] leading-9 md:leading-[44px]  w-auto lg:w-[523px] text-start pro-medium">
-              A modern, trustworthy, and high performance platform for Copy
+              A modern, trustworthy, and high performanc platform for Copy
               Trading.
             </h3>
 

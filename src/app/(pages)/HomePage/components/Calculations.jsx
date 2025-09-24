@@ -88,7 +88,7 @@ const Calculations = () => {
         </div>
 
         <div className="space-y-6">
-          <p className="opacity-80 text-[18px] pro-normal leading-6 max-w-[440px] max-[700px]:">
+          <p className="opacity-80 text-[17px] pro-normal leading-6 max-w-[440px] max-[700px]:">
             We are a full-cycle product development company that combines
             creative thinking with technical.
           </p>
