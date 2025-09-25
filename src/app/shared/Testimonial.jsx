@@ -5,7 +5,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 const testimonials = [
   {
     id: 1,
-    companyLogo: "/images/copycrusher-icon.svg",
+    companyLogo: "/images/metricwise.svg",
     text: "They brought our app redesign to life beyond expectations! We’re thrilled with the results and truly loved collaborating with their incredibly talented team.",
     name: "Eric Williams",
     role: "Founder and CEO, Copy Crushers",

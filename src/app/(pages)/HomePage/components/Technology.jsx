@@ -26,7 +26,7 @@ const Technology = () => {
           {/* Background image container */}
           <div
             className="absolute inset-0 z-0 bg-cover bg-center transition-all duration-300"
-            style={{ backgroundImage: "url('./images/technology1.svg')" }}
+            style={{ backgroundImage: "url('./images/technology1.png')" }}
           ></div>
 
           {/* Content */}
@@ -54,7 +54,7 @@ const Technology = () => {
           {/* Background image container */}
           <div
             className="absolute inset-0 z-0 bg-cover bg-center transition-all duration-300"
-            style={{ backgroundImage: "url('./images/technology1.svg')" }}
+            style={{ backgroundImage: "url('./images/technology2.png')" }}
           ></div>
 
           {/* Content */}
@@ -82,7 +82,7 @@ const Technology = () => {
           {/* Background image container */}
           <div
             className="absolute inset-0 z-0 bg-cover bg-center transition-all duration-300"
-            style={{ backgroundImage: "url('./images/technology1.svg')" }}
+            style={{ backgroundImage: "url('./images/technology3.png')" }}
           ></div>
 
           {/* Content */}
@@ -109,7 +109,7 @@ const Technology = () => {
           {/* Background image container */}
           <div
             className="absolute inset-0 z-0 bg-cover bg-center transition-all duration-300"
-            style={{ backgroundImage: "url('./images/technology1.svg')" }}
+            style={{ backgroundImage: "url('./images/technology4.png')" }}
           ></div>
 
           {/* Content */}
@@ -137,7 +137,7 @@ const Technology = () => {
           {/* Background image container */}
           <div
             className="absolute inset-0 z-0 bg-cover bg-center transition-all duration-300"
-            style={{ backgroundImage: "url('./images/technology1.svg')" }}
+            style={{ backgroundImage: "url('./images/technology5.png')" }}
           ></div>
 
           {/* Content */}
@@ -165,7 +165,7 @@ const Technology = () => {
           {/* Background image container */}
           <div
             className="absolute inset-0 z-0 bg-cover bg-center transition-all duration-300"
-            style={{ backgroundImage: "url('./images/technology1.svg')" }}
+            style={{ backgroundImage: "url('./images/technology6.png')" }}
           ></div>
 
           {/* Content */}
