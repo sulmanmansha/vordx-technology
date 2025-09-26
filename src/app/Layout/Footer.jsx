@@ -149,7 +149,7 @@ const Footer = () => {
         <div className="flex justify-between py-8 border-b border-[#FFFFFF1F] flex-wrap items-center">
           {consultationdata.map((consultation, index) => (
             <div
-              key={index} 
+              key={index}
               className="flex gap-3 items-start max-[500px]:flex-col max-[992px]:mb-4"
             >
               <Image
@@ -163,22 +163,26 @@ const Footer = () => {
                 <p className="text-[20px] leading-6 pro-semibold">
                   {consultation.country}
                 </p>
-                <p>
-                  <span className="text-[16px] text-[#fff] leading-5 pro-semibold">
-                    {consultation.address_title}
-                  </span>
-                  <span className="text-[#FFFFFFB8] text-[16px] leading-7 pro-normal pl-1">
-                    {consultation.address}
-                  </span>
-                </p>
-                <p>
-                  <span className="text-[16px] leading-5 pro-semibold">
-                    {consultation.phone_title}
-                  </span>
-                  <span className="text-[#FFFFFFB8] text-[16px] leading-7 pro-normal pl-1">
-                    {consultation.phone_no}
-                  </span>
-                </p>
+                <Link href="https://www.google.com/maps/search/?api=1&query=145+G,+Sector+G,+Dha+Phase+1,+Lahore,+54810">
+                  <p>
+                    <span className="text-[16px] text-[#fff] leading-5 pro-semibold">
+                      {consultation.address_title}
+                    </span>
+                    <span className="text-[#FFFFFFB8] text-[16px] leading-7 pro-normal pl-1">
+                      {consultation.address}
+                    </span>
+                  </p>
+                </Link>
+                <Link href="contact">
+                  <p>
+                    <span className="text-[16px] leading-5 pro-semibold">
+                      {consultation.phone_title}
+                    </span>
+                    <span className="text-[#FFFFFFB8] text-[16px] leading-7 pro-normal pl-1">
+                      {consultation.phone_no}
+                    </span>
+                  </p>
+                </Link>
               </div>
             </div>
           ))}

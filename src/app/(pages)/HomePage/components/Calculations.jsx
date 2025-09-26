@@ -71,13 +71,13 @@ const Calculations = () => {
     <div className="bg-[#101215] ">
       <div
         ref={sectionRef}
-        className="container-class px-[10px] md:px-[140px] lg:px-[140px] py-[10px] md:py-20 
+        className="container-class px-[10px] md:px-[140px] lg:px-[140px] py-[10px] md:py-10 items-center 
 grid lg:grid-cols-2 gap-10 lg:gap-24 text-white max-[1200px]:!grid-cols-1"
       >
         {/* Left */}
-        <div className="flex flex-col justify-between">
+        <div className="flex flex-col gap-6">
           <div className="space-y-6 max-w-md">
-            <h2 className="text-[32px] sm:text-[40px] md:text-[48px] leading-10 sm:leading-[50px] md:leading-[60px] pro-medium mb-2 lg:text-[48px]">
+            <h2 className="text-[32px] sm:text-[40px] md:text-[48px] leading-10 sm:leading-[50px] md:leading-[60px] pro-medium lg:text-[48px]">
               Our journey <br /> of building success.
             </h2>
           </div>

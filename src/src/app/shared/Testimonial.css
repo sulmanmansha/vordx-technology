@@ -1,0 +1,42 @@
+.swiper-pagination-bullets {
+  display: flex !important;
+  left: 5% !important;
+  bottom: 16% !important;
+}
+
+.swiper-pagination-bullet {
+  background: transparent !important;
+  height: 12px;
+  width: 12px;
+  border: 2px solid white;
+  opacity: 100% !important;
+}
+
+.swiper-pagination-bullet-active {
+  border: 2px solid transparent;
+  background: #a1f919 !important;
+}
+
+@media (max-width: 1000px) {
+  .swiper-pagination-bullets {
+    display: flex !important;
+    left: 18% !important;
+    bottom: 2% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-pagination-bullets {
+    display: flex !important;
+    left: 27% !important;
+    bottom: 2% !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .swiper-pagination-bullets {
+    display: flex !important;
+    left: 5% !important;
+    bottom: 0% 0px !important;
+  }
+}

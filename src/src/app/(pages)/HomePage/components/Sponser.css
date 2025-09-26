@@ -1,0 +1,31 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.sponser-scroll {
+  display: flex;
+  animation: scroll 4s linear infinite;
+  will-change: transform;
+}
+
+.sponser-static {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sponser-scroll .flex,
+.sponser-static .flex {
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .sponser-scroll {
+    animation: scroll 10s linear infinite;
+  }
+}

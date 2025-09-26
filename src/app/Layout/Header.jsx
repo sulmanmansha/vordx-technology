@@ -286,7 +286,7 @@ export default function Navbar() {
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
           >
-            Book to Call
+            Book a Call
             <motion.svg
               xmlns="http://www.w3.org/2000/svg"
               width="21"
