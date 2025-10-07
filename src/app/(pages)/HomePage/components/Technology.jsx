@@ -21,26 +21,29 @@ const Technology = () => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-5 pt-10 md:pt-[52px] justify-center">
-        {/* Card 1: Back-End Development */}
+        {/* Card 1: Back-End*/}
         <div className="relative h-[596px] w-full py-10 px-[34px] rounded-xl text-left overflow-hidden group">
-          {/* Background image container */}
           <div
             className="absolute inset-0 z-0 bg-cover bg-center transition-all duration-300"
             style={{ backgroundImage: "url('./images/technology1.png')" }}
           ></div>
 
-          {/* Content */}
           <div className="relative z-20">
             <p className="sm:text-[36px] text-[28px] leading-8 sm:leading-10 pro-bold">
               Front - End Development
             </p>
           </div>
-          {/* Overlay */}
-          <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-700 bg-[#3E03B3]"></div>
 
-          {/* Content */}
-          <div className="absolute inset-0 flex flex-col justify-end gap-8 py-5 px-5 sm:py-10 sm:px-[34px] opacity-0 group-hover:opacity-100 transition-all duration-700">
-            <h3 className="text-[20px] leading-[24px] text-start pro-normal">
+          {/* 1. Overlay (Color) */}
+          <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-1000 bg-[#3E03B3]"></div>
+
+          {/* 2. Transitioning Content*/}
+          <div
+            className="absolute inset-0 flex flex-col justify-end gap-8 py-5 px-5 sm:py-10 sm:px-[34px] transition-all duration-1000 
+               opacity-0 translate-y-full 
+               group-hover:opacity-100 group-hover:translate-y-0"
+          >
+            <h3 className="text-[20px] leading-[24px] text-start pro-normal text-white">
               Engineering powerful and secure back-end systems that deliver
               stability, high performance, and seamless integration with
               front-end layers.
@@ -48,7 +51,6 @@ const Technology = () => {
             <button className="technology-service-btn">Book service</button>
           </div>
         </div>
-
         {/* Card 2: Back-End Development */}
         <div className="relative h-[596px] w-full py-10 px-[34px] rounded-xl text-left overflow-hidden group">
           {/* Background image container */}
@@ -64,11 +66,15 @@ const Technology = () => {
             </p>
           </div>
           {/* Overlay */}
-          <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-700 bg-[#3E03B3]"></div>
+          <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-1000 bg-[#3E03B3]"></div>
 
           {/* Content */}
-          <div className="absolute inset-0 flex flex-col justify-end gap-8 py-5 px-5 sm:py-10 sm:px-[34px] opacity-0 group-hover:opacity-100 transition-all duration-700">
-            <h3 className="text-[20px] leading-[24px] text-start pro-normal">
+          <div
+            className="absolute inset-0 flex flex-col justify-end gap-8 py-5 px-5 sm:py-10 sm:px-[34px] transition-all duration-1000 
+               opacity-0 translate-y-full 
+               group-hover:opacity-100 group-hover:translate-y-0"
+          >
+            <h3 className="text-[20px] leading-[24px] text-start pro-normal text-white">
               Engineering powerful and secure back-end systems that deliver
               stability, high performance, and seamless integration with
               front-end layers.
@@ -92,11 +98,15 @@ const Technology = () => {
             </p>
           </div>
           {/* Overlay */}
-          <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-700 bg-[#3E03B3]"></div>
+          <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-1000 bg-[#3E03B3]"></div>
 
           {/* Content */}
-          <div className="absolute inset-0 flex flex-col justify-end gap-8 py-5 px-5 sm:py-10 sm:px-[34px] opacity-0 group-hover:opacity-100 transition-all duration-700">
-            <h3 className="text-[20px] leading-[24px] text-start pro-normal">
+          <div
+            className="absolute inset-0 flex flex-col justify-end gap-8 py-5 px-5 sm:py-10 sm:px-[34px] transition-all duration-1000 
+               opacity-0 translate-y-full 
+               group-hover:opacity-100 group-hover:translate-y-0"
+          >
+            <h3 className="text-[20px] leading-[24px] text-start pro-normal text-white">
               Designing and building engaging mobile applications that combine
               rich functionality with smooth performance across iOS and Android.
             </h3>
@@ -119,11 +129,15 @@ const Technology = () => {
             </p>
           </div>
           {/* Overlay */}
-          <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-700 bg-[#3E03B3]"></div>
+          <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-1000 bg-[#3E03B3]"></div>
 
           {/* Content */}
-          <div className="absolute inset-0 flex flex-col justify-end gap-8 py-5 px-5 sm:py-10 sm:px-[34px] opacity-0 group-hover:opacity-100 transition-all duration-700">
-            <h3 className="text-[20px] leading-[24px] text-start pro-normal">
+          <div
+            className="absolute inset-0 flex flex-col justify-end gap-8 py-5 px-5 sm:py-10 sm:px-[34px] transition-all duration-1000 
+               opacity-0 translate-y-full 
+               group-hover:opacity-100 group-hover:translate-y-0"
+          >
+            <h3 className="text-[20px] leading-[24px] text-start pro-normal text-white">
               Offering expert, scalable development teams that integrate
               seamlessly with your workflow to deliver quality digital solutions
               efficiently.
@@ -147,11 +161,14 @@ const Technology = () => {
             </p>
           </div>
           {/* Overlay */}
-          <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-700 bg-[#3E03B3]"></div>
-
+          <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-1000 bg-[#3E03B3]"></div>
           {/* Content */}
-          <div className="absolute inset-0 flex flex-col justify-end gap-8 py-5 px-5 sm:py-10 sm:px-[34px] opacity-0 group-hover:opacity-100 transition-all duration-700">
-            <h3 className="text-[20px] leading-[24px] text-start pro-normal">
+          <div
+            className="absolute inset-0 flex flex-col justify-end gap-8 py-5 px-5 sm:py-10 sm:px-[34px] transition-all duration-1000 
+               opacity-0 translate-y-full 
+               group-hover:opacity-100 group-hover:translate-y-0"
+          >
+            <h3 className="text-[20px] leading-[24px] text-start pro-normal text-white">
               Developing customized, future-ready software tailored to specific
               business goals, streamlining operations and driving long-term
               success.
@@ -175,11 +192,15 @@ const Technology = () => {
             </p>
           </div>
           {/* Overlay */}
-          <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-700 bg-[#3E03B3]"></div>
+          <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-1000 bg-[#3E03B3]"></div>
 
           {/* Content */}
-          <div className="absolute inset-0 flex flex-col justify-end gap-8  py-5 px-5 sm:py-10 sm:px-[34px] opacity-0 group-hover:opacity-100 transition-all duration-700">
-            <h3 className="text-[20px] leading-[24px] text-start pro-normal">
+          <div
+            className="absolute inset-0 flex flex-col justify-end gap-8 py-5 px-5 sm:py-10 sm:px-[34px] transition-all duration-1000
+               opacity-0 translate-y-full 
+               group-hover:opacity-100 group-hover:translate-y-0"
+          >
+            <h3 className="text-[20px] leading-[24px] text-start pro-normal text-white">
               Strategically designing seamless user experiences with a focus on
               usability, functionality, and visual consistency to elevate
               digital products.

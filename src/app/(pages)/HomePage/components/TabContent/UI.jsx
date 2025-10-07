@@ -15,10 +15,10 @@ const UI = () => {
     transition={{ duration: 0.6, delay: 0.3 }}
   >
     <Image
-      src="/images/ui1.svg"
+      src="/images/ui1.png"
       fill
       alt="team"
-      className="object-cover w-full h-full"
+      className="object-fill w-full h-full"
     />
     <div className="absolute inset-0 bg-black/40 translate-y-full group-hover:translate-y-0 transition-all duration-700"></div>
     <div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-700 group-hover:delay-500">
@@ -44,10 +44,10 @@ const UI = () => {
     transition={{ duration: 0.6, delay: 0.6 }}
   >
     <Image
-      src="/images/ui2.svg"
+      src="/images/ui2.png"
       fill
       alt="team"
-      className="object-cover w-full h-full"
+      className="object-fill w-full h-full"
     />
     <div className="absolute inset-0 bg-black/40 translate-y-full group-hover:translate-y-0 transition-all duration-700"></div>
     <div className="absolute inset-0 flex flex-col justify-between pt-4 pr-[18px] pb-6 pl-4 sm:pt-6 sm:pr-[22px] sm:pb-9 sm:pl-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-700 group-hover:delay-500">
@@ -75,10 +75,10 @@ const UI = () => {
     transition={{ duration: 0.6, delay: 0.9 }}
   >
     <Image
-      src="/images/ui3.svg"
+      src="/images/ui3.png"
       fill
       alt="team"
-      className="object-cover w-full h-full"
+      className="object-fill w-full h-full"
     />
     <div className="absolute inset-0 bg-black/40 translate-y-full group-hover:translate-y-0 transition-all duration-700"></div>
     <div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-700 group-hover:delay-500">
@@ -104,10 +104,10 @@ const UI = () => {
     transition={{ duration: 0.6, delay: 1.2 }}
   >
     <Image
-      src="/images/ui4.svg"
+      src="/images/ui4.png"
       fill
       alt="team"
-      className="object-cover w-full h-full"
+      className="object-fill w-full h-full"
     />
     <div className="absolute inset-0 bg-black/40 translate-y-full group-hover:translate-y-0 transition-all duration-700"></div>
     <div className="absolute inset-0 flex flex-col justify-between pt-4 pr-[18px] pb-6 pl-4 sm:pt-6 sm:pr-[22px] sm:pb-9 sm:pl-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-700 group-hover:delay-500">
@@ -135,10 +135,10 @@ const UI = () => {
     transition={{ duration: 0.6, delay: 1.5 }}
   >
     <Image
-      src="/images/ui5.svg"
+      src="/images/ui5.png"
       fill
       alt="team"
-      className="object-cover w-full h-full"
+      className="object-fill w-full h-full"
     />
     <div className="absolute inset-0 bg-black/40 translate-y-full group-hover:translate-y-0 transition-all duration-700"></div>
     <div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-700 group-hover:delay-500">
