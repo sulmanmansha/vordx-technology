@@ -58,7 +58,7 @@ const Faq = () => {
               <h1 className="text-[30px] sm:text-[44px] pt-6 pro-medium leading-8 sm:leading-[48px]">
                 Book an intro call
               </h1>
-              <p className="text-[20px] pro-medium leading-6 pt-6">
+              <p className="text-[20px] pro-normal leading-6 pt-6">
                 Time to get introduced and explore how Vordx can help.
               </p>
               <Link href="/contact">

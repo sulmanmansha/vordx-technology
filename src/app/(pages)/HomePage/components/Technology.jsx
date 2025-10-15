@@ -44,11 +44,14 @@ const Technology = () => {
                group-hover:opacity-100 group-hover:translate-y-0"
           >
             <h3 className="text-[20px] leading-[24px] text-start pro-normal text-white">
-              Engineering powerful and secure back-end systems that deliver
-              stability, high performance, and seamless integration with
-              front-end layers.
+              Designing pixel-perfect and responsive interfaces that ensure
+              seamless interactions, intuitive navigation, and an engaging
+              experience across every device and platform.
             </h3>
-            <button className="technology-service-btn">Book service</button>
+            <Link href="./contact">
+              {" "}
+              <button className="technology-service-btn">Book service</button>
+            </Link>
           </div>
         </div>
         {/* Card 2: Back-End Development */}
@@ -75,11 +78,14 @@ const Technology = () => {
                group-hover:opacity-100 group-hover:translate-y-0"
           >
             <h3 className="text-[20px] leading-[24px] text-start pro-normal text-white">
-              Engineering powerful and secure back-end systems that deliver
-              stability, high performance, and seamless integration with
-              front-end layers.
+              Engineering powerful and secure server-side systems that ensure
+              stability, scalability, and smooth data flow between applications,
+              delivering unmatched performance and reliability.
             </h3>
-            <button className="technology-service-btn">Book service</button>
+            <Link href="./contact">
+              {" "}
+              <button className="technology-service-btn">Book service</button>
+            </Link>
           </div>
         </div>
 
@@ -94,7 +100,7 @@ const Technology = () => {
           {/* Content */}
           <div className="relative z-20">
             <p className="sm:text-[36px] text-[28px] leading-8 sm:leading-10 pro-bold">
-              Mobile App development
+              Mobile App Development
             </p>
           </div>
           {/* Overlay */}
@@ -107,10 +113,14 @@ const Technology = () => {
                group-hover:opacity-100 group-hover:translate-y-0"
           >
             <h3 className="text-[20px] leading-[24px] text-start pro-normal text-white">
-              Designing and building engaging mobile applications that combine
-              rich functionality with smooth performance across iOS and Android.
+              Building high-performing, user-focused mobile applications that
+              combine sleek design with powerful functionality, ensuring
+              seamless experiences across iOS and Android platforms.
             </h3>
-            <button className="technology-service-btn">Book service</button>
+            <Link href="./contact">
+              {" "}
+              <button className="technology-service-btn">Book service</button>
+            </Link>{" "}
           </div>
         </div>
 
@@ -125,7 +135,7 @@ const Technology = () => {
           {/* Content */}
           <div className="relative z-20">
             <p className="sm:text-[36px] text-[28px] leading-8 sm:leading-10 pro-bold">
-              Dedicated Development Teams
+              Custom Software Solutions
             </p>
           </div>
           {/* Overlay */}
@@ -138,11 +148,14 @@ const Technology = () => {
                group-hover:opacity-100 group-hover:translate-y-0"
           >
             <h3 className="text-[20px] leading-[24px] text-start pro-normal text-white">
-              Offering expert, scalable development teams that integrate
-              seamlessly with your workflow to deliver quality digital solutions
-              efficiently.
+              Developing tailored software that aligns perfectly with your
+              business goals, enhancing efficiency, scalability, and performance
+              through innovative technology and strategic design.
             </h3>
-            <button className="technology-service-btn">Book service</button>
+            <Link href="./contact">
+              {" "}
+              <button className="technology-service-btn">Book service</button>
+            </Link>{" "}
           </div>
         </div>
 
@@ -157,7 +170,7 @@ const Technology = () => {
           {/* Content */}
           <div className="relative z-20">
             <p className="sm:text-[36px] text-[28px] leading-8 sm:leading-10 pro-bold">
-              Custom Software Solutions
+              Dedicated Development Teams
             </p>
           </div>
           {/* Overlay */}
@@ -169,11 +182,14 @@ const Technology = () => {
                group-hover:opacity-100 group-hover:translate-y-0"
           >
             <h3 className="text-[20px] leading-[24px] text-start pro-normal text-white">
-              Developing customized, future-ready software tailored to specific
-              business goals, streamlining operations and driving long-term
-              success.
+              Providing skilled, cross-functional teams fully aligned with your
+              project goals, ensuring seamless collaboration, faster delivery,
+              and high-quality results from start to finish.
             </h3>
-            <button className="technology-service-btn">Book service</button>
+            <Link href="./contact">
+              {" "}
+              <button className="technology-service-btn">Book service</button>
+            </Link>{" "}
           </div>
         </div>
 
@@ -201,11 +217,14 @@ const Technology = () => {
                group-hover:opacity-100 group-hover:translate-y-0"
           >
             <h3 className="text-[20px] leading-[24px] text-start pro-normal text-white">
-              Strategically designing seamless user experiences with a focus on
-              usability, functionality, and visual consistency to elevate
-              digital products.
+              Creating user-centered designs that blend aesthetics with
+              functionality, improving usability, engagement, and overall
+              satisfaction through data-driven insights and expert guidance.
             </h3>
-            <button className="technology-service-btn">Book service</button>
+            <Link href="./contact">
+              {" "}
+              <button className="technology-service-btn">Book service</button>
+            </Link>{" "}
           </div>
         </div>
       </div>

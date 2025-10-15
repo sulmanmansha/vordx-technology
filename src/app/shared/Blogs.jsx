@@ -4,26 +4,27 @@ import Image from "next/image";
 
 const articles = [
   {
-    image: "/images/article1.svg",
-    category: "Culture",
+    image: "/images/article1.png",
+    category: "Software Development",
     date: "1 Aug, 2025",
-    title: "Running design sprints to align your team and meet deadlines",
+    title:
+      "How Design Sprints Streamline Software Development and Boost Team Focus",
     width: 483,
     height: 316,
   },
   {
-    image: "/images/article2.svg",
-    category: "Software Development",
+    image: "/images/article2.png",
+    category: "UI/UX Design",
     date: "31 Jul, 2025",
-    title: "Inside our rebranding process and what we learned from it",
+    title: "How thoughtful UI/UX design shapes digital success",
     width: 329,
     height: 220,
   },
   {
-    image: "/images/article3.svg",
-    category: "Software Development",
+    image: "/images/article3.png",
+    category: "Culture",
     date: "31 Jul, 2025",
-    title: "Choosing the right SaaS platform for your business",
+    title: "Building a culture that inspires creativity and collaboration",
     width: 329,
     height: 220,
   },
@@ -34,15 +35,15 @@ function Blogs() {
     <div className="py-5 md:py-20 px-4 md:px-[119px] max-w-[1440px] m-auto">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end">
         <div>
-          <p className="text-[32px] md:text-[48px] leading-[40px] md:leading-[60px] pro-medium">
+          <h1 className="text-[32px] md:text-[48px] leading-[40px] md:leading-[60px] pro-medium">
             Our articles & blogs
-          </p>
-          <p className="text-[#FFFFFF99] text-[16px] md:text-[17px] leading-6 mt-4">
+          </h1>
+          <h3 className="text-[#FFFFFF99] text-[16px] md:text-[18px] leading-6 mt-4">
             Discover expert tips, industry insights, and storis to inspire yours
             next big idea.
-          </p>
+          </h3>
         </div>
-        
+
         <div className="mt-8 md:mt-0">
           <Button href="/blogs" text="Explore Articles" />
         </div>
@@ -67,12 +68,11 @@ function Blogs() {
               />
             </div>
             <p
-              className={`article-title mt-4 ${
-                index > 0 ? "flex justify-between" : ""
-              }`}
+              className={`article-title mt-4 ${index > 0 ? "flex start" : ""}`}
             >
-              <span>{article.category}</span>
-              <span className="article-date ml-3">{article.date}</span>
+              <span className=" text-[12px] pro-medium leading-4 text-[#A1F919] py-[5px] px-3 rounded-full border border-[#A1F919]">
+                {article.category}
+              </span>
             </p>
             <p className="article-description mt-4">{article.title}</p>
           </div>

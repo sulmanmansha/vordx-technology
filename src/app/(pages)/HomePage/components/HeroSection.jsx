@@ -104,23 +104,52 @@ const HeroSection = ({ data }) => {
           </div>
         </div>
 
+        {/* LOGO CARDS SECTION - MODIFIED */}
         <div className="flex items-center justify-center gap-4 flex-wrap">
           {data && data.length > 0
-            ? data.map((item) => (
-                <div
-                  key={item.id}
-                  className="w-20 h-20 md:w-28 md:h-28 bg-[#FFFFFF0A] border border-[#FFFFFF14] rounded-2xl flex items-center justify-center p-3 sm:p-4 group [perspective:1000px]"
-                >
+            ? data.map((item) => {
+                // ✅ CORRECTED LINE: 'link' property ko 'link_path' mein rename kiya gaya hai
+                const { id, image_path, link: link_path } = item;
+
+                // Define the common classes for the wrapper
+                const wrapperClasses =
+                  "w-20 h-20 md:w-28 md:h-28 bg-[#FFFFFF0A] border border-[#FFFFFF14] rounded-2xl flex items-center justify-center p-3 sm:p-4 group [perspective:1000px]";
+
+                // Card content (Image)
+                const CardContent = (
                   <Image
-                    src={item.image_path}
+                    src={image_path}
                     width={80}
                     height={80}
                     alt="hero icon"
                     className="max-w-full max-h-full object-contain group-hover:[transform:rotateY(180deg)] transition-transform duration-500 ease-in-out [transform-style:preserve-3d]"
                     unoptimized
                   />
-                </div>
-              ))
+                );
+
+                // Render Link component if link_path exists, otherwise render a div
+                if (link_path) {
+                  return (
+                    // Next.js Link aur 'block' class add ki gayi hai taa ke poora area clickable ho
+                    <Link
+                      key={id}
+                      href={link_path}
+                      target="_blank" // External link naye tab mein kholne ke liye
+                      rel="noopener noreferrer"
+                      className={`${wrapperClasses} cursor-pointer hover:bg-[#FFFFFF1A] transition-colors block`} 
+                    >
+                      {CardContent}
+                    </Link>
+                  );
+                } else {
+                  return (
+                    // Use a regular div if no link_path is provided
+                    <div key={id} className={wrapperClasses}>
+                      {CardContent}
+                    </div>
+                  );
+                }
+              })
             : Array.from({ length: 5 }).map((_, i) => (
                 <Skeleton
                   key={i}
@@ -132,6 +161,8 @@ const HeroSection = ({ data }) => {
                 />
               ))}
         </div>
+        {/* END OF LOGO CARDS SECTION */}
+        
         {/* chats-btn */}
         {/* <Link href="/contact">
           <button className="chats-btn">

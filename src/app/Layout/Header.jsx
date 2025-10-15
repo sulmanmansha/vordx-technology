@@ -144,7 +144,7 @@ export default function Navbar() {
           <button
             ref={servicesButtonRef}
             onClick={() => setMegaOpen(!megaOpen)}
-            className={`text-[14px] pro-medium leading-5 transition-colors duration-300
+            className={`text-[14px] pro-normal leading-5 transition-colors duration-300
               ${
                 pathname.startsWith("/service")
                   ? "text-[#9aee1a]"
@@ -158,7 +158,7 @@ export default function Navbar() {
           {/* Work Link */}
           <Link
             href="/work"
-            className={`text-[14px] pro-medium leading-5 transition-colors duration-300
+            className={`text-[14px] pro-normal leading-5 transition-colors duration-300
               ${
                 pathname === "/work"
                   ? "text-[#9aee1a]"
@@ -172,7 +172,7 @@ export default function Navbar() {
           {/* Industries Link */}
           <Link
             href="/industry"
-            className={`text-[14px] pro-medium leading-5 transition-colors duration-300
+            className={`text-[14px] pro-normal leading-5 transition-colors duration-300
               ${
                 pathname === "/industry"
                   ? "text-[#9aee1a]"
@@ -186,7 +186,7 @@ export default function Navbar() {
           {/* About Link */}
           <Link
             href="/about"
-            className={`text-[14px] pro-medium leading-5 transition-colors duration-300
+            className={`text-[14px] pro-normal leading-5 transition-colors duration-300
               ${
                 pathname === "/about"
                   ? "text-[#9aee1a]"
@@ -201,7 +201,7 @@ export default function Navbar() {
           <div className="flex items-center gap-2">
             <Link
               href="/career"
-              className={`text-[14px] pro-medium leading-5 transition-colors duration-300
+              className={`text-[14px] pro-normal leading-5 transition-colors duration-300
                 ${
                   pathname === "/career"
                     ? "text-[#9aee1a]"
