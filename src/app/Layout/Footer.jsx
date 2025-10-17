@@ -208,12 +208,12 @@ const Footer = () => {
             {/* Contact Section */}
             <div>
               <h3 className="text-[16px] text-[#fff] pro-semibold leading-normal mb-8">
-                Contact us
+                Services
               </h3>
               <ul className="space-y-[18px] font-16 pro-normal leading-normal opacity-[72%]">
                 <li>
                   <a
-                    href="tel:+923240110040"
+                    href="service/uiux-design-and-consultation-v5tdSE8L"
                     className="text-[16px] pro-normal leading-normal"
                   >
                     UX Design
@@ -221,7 +221,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="mailto:contact@vordx.com"
+                    href="service/front-end-development-uQdvsdYK"
                     className="text-[16px] pro-normal leading-normal"
                   >
                     Web Development
@@ -229,8 +229,8 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="https://vordxtechnologies.com"
-                    target="_blank"
+                    href="service/uiux-design-and-consultation-v5tdSE8L"
+              
                     rel="noopener noreferrer"
                     className="text-[16px] pro-normal leading-normal"
                   >
